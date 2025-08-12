@@ -34,7 +34,7 @@ def load_geo(file_path):
 # --- Function to plot map and bar chart ---
 def plot_charts(change_df, color_scale, map_title, bar_title):
     plot_df = change_df.copy()
-    st.write(plot_df)
+    # st.write(plot_df)
     geo_key = st.session_state["geo_unit_col"]
     map_col = "Change"
     bar_col = "Change"
@@ -56,7 +56,7 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
     width = abs(maxx - minx)
     height = abs(maxy - miny)
 
-    st.write(minx, miny, maxx, maxy, width, height)
+    # st.write(minx, miny, maxx, maxy, width, height)
     factor_padding = 0.05
 
     if width < 1.2 and height < 1.2:
@@ -67,7 +67,7 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
     maxx *= (1 + factor_padding)
     maxy *= (1 + factor_padding)
 
-    st.write(minx, miny, maxx, maxy, width, height)
+    # st.write(minx, miny, maxx, maxy, width, height)
 
 
     if (width <= height):
@@ -83,14 +83,14 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
 
     width = abs(maxx - minx)
     height = abs(maxy - miny)
-    st.write(minx, miny, maxx, maxy,width, height, width/height)
+    # st.write(minx, miny, maxx, maxy,width, height, width/height)
 
     if width/height>1.68:
         minx -= (height - width) / 2
         maxx += (height - width) / 2
     width = abs(maxx - minx)
     height = abs(maxy - miny)
-    st.write(minx, miny, maxx, maxy,width, height, width/height)
+    # st.write(minx, miny, maxx, maxy,width, height, width/height)
 
 
 
