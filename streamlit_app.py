@@ -92,13 +92,7 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
     height = abs(maxy - miny)
     st.write(minx, miny, maxx, maxy,width, height, width/height)
 
-    bounds = {
-        "west": float(minx),
-        "east": float(maxx),
-        "south": float(miny),
-        "north": float(maxy)
-        #     lat/3 is also good estimate for maxy
-    }
+
 
     center_lon = (minx + maxx) / 2
     center_lat = (miny + maxy) / 2
@@ -180,7 +174,7 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
     with col1:
         st.subheader(f"District Map of {selected_state.title()}")
         with st.container():
-            st.plotly_chart(map_fig, use_container_height=True)
+            st.plotly_chart(map_fig, use_container_height=True, zoom_level=-8)
     with col2:
         st.subheader("District Data")
         with st.container(height=400):
