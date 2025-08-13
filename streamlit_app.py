@@ -57,7 +57,7 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
     height = abs(maxy - miny)
 
     # st.write(minx, miny, maxx, maxy, width, height)
-    factor_padding = 0.05
+    factor_padding = 0.06
 
     if width < 1.2 and height < 1.2:
         factor_padding = 0.001
@@ -90,7 +90,7 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
         maxx += (height - width) / 2
     width = abs(maxx - minx)
     height = abs(maxy - miny)
-    # st.write(minx, miny, maxx, maxy,width, height, width/height)
+    st.write(minx, miny, maxx, maxy,width, height, width/height)
 
 
 
@@ -119,7 +119,7 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
         lat=plot_df.geometry.centroid.y,
         mode='text',
         text=plot_df.apply(lambda row: f"{row[geo_key]}<br>{row[map_col]}", axis=1),
-        textfont=dict(size=8, color='black'),
+        textfont=dict(size=9, color='black'),
         hoverinfo='none'
     ))
 
@@ -155,7 +155,7 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
     )
     bar_fig.update_traces(
         texttemplate="%{text}",
-        textposition="inside",
+        textposition="outside",
         insidetextanchor="middle",
         textfont=dict(size=10, color="black"),
         cliponaxis=False
@@ -164,17 +164,17 @@ def plot_charts(change_df, color_scale, map_title, bar_title):
 
     bar_fig.update_layout(
         # height=max(400, len(plot_df) * 25),
-        margin=dict(l=0, r=0, t=50, b=0),
+        margin=dict(l=0, r=50, t=50, b=0),
         yaxis=dict(tickfont=dict(size=10)),
         # height=num_bars*30,
     )
 
     selected_state = st.session_state["selected_state"]
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([4,3])
     with col1:
         st.subheader(f"District Map of {selected_state.title()}")
         with st.container():
-            st.plotly_chart(map_fig, use_container_height=True, zoom_level=-8)
+            st.plotly_chart(map_fig, use_container_height=True, zoom_level=-8, use_container_width=True)
     with col2:
         st.subheader("District Data")
         with st.container(height=400):
