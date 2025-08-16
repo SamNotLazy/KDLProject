@@ -1,5 +1,5 @@
 import dash
-from dash import dcc, html, Input, Output, no_update
+from dash import dcc, html, Input, Output, State, no_update
 import dash_bootstrap_components as dbc
 from dash.exceptions import PreventUpdate
 from flask_caching import Cache
@@ -11,7 +11,6 @@ import numpy as np
 import os
 
 # --- Dash App and Cache Initialization ---
-# This is the single, correct place to initialize the app.
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP],
                 meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1.0'}])
 server = app.server
@@ -38,7 +37,41 @@ def load_geo(file_path):
         print(f"Error reading file: {e}")
         return None
 
-# --- Function to create map and bar chart ---
+# --- Charting Function ---
+def calculate_zoom(gdf: gpd.GeoDataFrame, adjustment: int = 0) -> int:
+    """
+    Calculates an appropriate map zoom level for a district-sized GeoDataFrame.
+
+    Args:
+        gdf: The GeoDataFrame for the district.
+        adjustment: An integer to fine-tune the zoom.
+                    - Use `1` to zoom in one level deeper.
+                    - Use `-1` to zoom out one level.
+                    - Default is `0` (no adjustment).
+
+    Returns:
+        An integer representing the final zoom level.
+    """
+    if gdf.empty:
+        return 8 # A reasonable default for an unknown district
+
+    minx, miny, maxx, maxy = gdf.total_bounds
+    width = maxx - minx
+    height = maxy - miny
+
+    # If it's a single point (e.g., district HQ), zoom to a city/town level
+    if width == 0 or height == 0:
+        return 12 + adjustment
+
+    max_dim = max(width, height)
+
+    # Calculate the base zoom level
+    zoom = np.floor(np.log2(360 / max_dim))
+
+    # Apply the adjustment and clamp the result to a practical range
+    final_zoom = int(np.clip(zoom + adjustment, 1, 10))
+
+    return final_zoom
 def plot_charts(change_df, gdf, geo_key, color_scale, map_title, bar_title):
     """
     Creates and returns a Plotly choropleth map and a bar chart.
@@ -55,9 +88,26 @@ def plot_charts(change_df, gdf, geo_key, color_scale, map_title, bar_title):
         return go.Figure(), go.Figure()
 
     num_bars = len(plot_df)
+    # --- Calculate maximum bounding square ---
     minx, miny, maxx, maxy = gdf.total_bounds
     center_lon = (minx + maxx) / 2
     center_lat = (miny + maxy) / 2
+
+    # Get the width and height of the bounding box
+    width = maxx - minx
+    height = maxy - miny
+
+    # The side of the square is the larger of the two dimensions
+    max_dim = max(width, height)
+
+    # Add a 5% padding to the square's dimension
+    padding = max_dim * 0.05
+
+    # Calculate the new square bounds
+    minx_sq = center_lon - (max_dim / 2) - padding
+    maxx_sq = center_lon + (max_dim / 2) + padding
+    miny_sq = center_lat - (max_dim / 2) - padding
+    maxy_sq = center_lat + (max_dim / 2) + padding
 
     # --- Choropleth Map ---
     map_fig = px.choropleth_map(
@@ -72,7 +122,7 @@ def plot_charts(change_df, gdf, geo_key, color_scale, map_title, bar_title):
         color_continuous_scale=color_scale,
         labels={map_col: map_col},
         center={"lat": center_lat, "lon": center_lon},
-        zoom=5 # A sensible default zoom
+        zoom=calculate_zoom(gdf) # A sensible default zoom
     )
 
     map_fig.add_trace(go.Scattermap(
@@ -90,7 +140,8 @@ def plot_charts(change_df, gdf, geo_key, color_scale, map_title, bar_title):
         margin={"r": 0, "t": 30, "l": 0, "b": 0},
         title=map_title,
         paper_bgcolor='white',
-        font_color='black'
+        font_color='black',
+        mapbox_bounds={"west": minx_sq, "east": maxx_sq, "south": miny_sq, "north": maxy_sq},
     )
 
     # --- Bar Chart ---
@@ -103,238 +154,165 @@ def plot_charts(change_df, gdf, geo_key, color_scale, map_title, bar_title):
         color=bar_col,
         color_continuous_scale=color_scale,
         height=max(400, num_bars * 25), # Dynamically set height
-        text=bar_col
+        text=bar_col,
     )
     bar_fig.update_traces(
-        texttemplate="%{text:.2f}",
-        textposition="outside",
+        texttemplate="%{text:.5f}",
+        textposition="auto",
     )
     bar_fig.update_coloraxes(showscale=False)
     bar_fig.update_layout(
-        margin=dict(l=10, r=50, t=50, b=10),
-        yaxis=dict(tickfont=dict(size=10)),
+        margin=dict(l=20, r=0, t=0, b=0),
+        # padding=dict(r=10),
+        yaxis=dict(tickfont=dict(size=9)),
         paper_bgcolor='white',
         plot_bgcolor='white',
-        font_color='black'
+        font_color='black',
     )
     return map_fig, bar_fig
 
-# --- Data Preparation and Configuration ---
+# --- Data Preparation ---
 BASE_DIR = 'INDIAN-SHAPEFILES-master'
 STATES_DIR = os.path.join(BASE_DIR, 'STATES')
-
-try:
-    if os.path.exists(STATES_DIR):
-        state_list = [name for name in os.listdir(STATES_DIR) if os.path.isdir(os.path.join(STATES_DIR, name))]
-        state_list.sort()
-    else:
-        state_list = []
-except Exception as e:
-    print(f"Error accessing state directory at {STATES_DIR}: {e}")
-    state_list = []
+state_list = sorted([name for name in os.listdir(STATES_DIR) if os.path.isdir(os.path.join(STATES_DIR, name))]) if os.path.exists(STATES_DIR) else []
 
 # --- Dash UI Layout ---
-# CORRECTED: Added config property to dcc.Graph to disable interactions
-map_config = {
-    'scrollZoom': False,
-    'displayModeBar': True, # Can be False to hide the mode bar completely
-    'modeBarButtonsToRemove': ['zoom2d', 'pan2d', 'select2d', 'lasso2d', 'autoScale2d', 'resetScale2d']
-}
+map_config = {'scrollZoom': True, 'displayModeBar': True, 'modeBarButtonsToRemove': ['select2d', 'lasso2d']}
 
 app.layout = dbc.Container(fluid=True, style={'backgroundColor': '#ffffff'}, children=[
+    # Store component to hold the current view level ('state' or 'district')
+    dcc.Store(id='view-level-store', data='state'),
 
     dbc.Row([
         dbc.Col(dcc.Dropdown(
             id='state-dropdown',
             options=[{'label': state, 'value': state} for state in state_list],
             value=state_list[0] if state_list else None,
-            clearable=False,
-            placeholder="Select a State"
+            clearable=False
         ), width={'size': 4, 'offset': 2}),
-        dbc.Col(dcc.Dropdown(
-            id='district-dropdown',
-            clearable=False,
-            placeholder="Select a District"
-        ), width=4),
+        dbc.Col(dcc.Dropdown(id='district-dropdown', clearable=False), width=4),
     ], className="my-4 justify-content-center"),
 
     html.Div(id='error-message', className="px-5"),
 
-    # --- State Level Visualization ---
-    html.Div(id='state-view', children=[
-        dbc.Card(dbc.CardBody([
-            html.H3("State Level View", className="text-center mt-2 mb-4"),
-            dbc.Row([
-                dbc.Col(dcc.Graph(id='state-map-graph', style={'height': '70vh'}, config=map_config), width=12, lg=7),
-                dbc.Col(html.Div([
-                    dcc.Graph(id='state-bar-graph', responsive=False)
-                ], style={'height': '70vh', 'overflowY': 'auto'}), width=12, lg=5),
-            ]),
-        ]), className="mb-4"),
-    ]),
+    # --- CONSOLIDATED VIEW ---
+    dbc.Card(dbc.CardBody([
+        dbc.Row([
+            dbc.Col(dbc.Button("⬅️ Back to State View", id="back-button", color="primary", outline=True, style={'display': 'none'}), width="auto"),
+            dbc.Col(html.H3(id="view-title", className="text-center"), width=True),
+        ], align="center", className="mb-4"),
+        dbc.Row([
+            dbc.Col(dcc.Graph(id='map-graph', style={'height': '70vh'}, config=map_config), lg=6),
+            dbc.Col(
+                html.Div(
+                    dcc.Graph(id='bar-graph', responsive=False),
+                    # Add padding and margin to the style dictionary below
+                    style={
+                        'height': '70vh',
+                        'overflowY': 'auto',
 
-    # --- Sub-District Level Visualization (Initially Hidden) ---
-    html.Div(id='subdistrict-view', style={'display': 'none'}, children=[
-        dbc.Card(dbc.CardBody([
-            dbc.Row([
-                dbc.Col(dbc.Button("⬅️ Back to State View", id="back-button", color="primary", outline=True), width="auto"),
-                dbc.Col(html.H3("Sub-District Level View", className="text-center"), width=True),
-            ], align="center", className="mb-4"),
-            dbc.Row([
-                dbc.Col(dcc.Graph(id='subdistrict-map-graph', style={'height': '70vh'}, config=map_config), width=12, lg=7),
-                dbc.Col(html.Div([
-                    dcc.Graph(id='subdistrict-bar-graph', responsive=False)
-                ], style={'height': '70vh', 'overflowY': 'auto'}), width=12, lg=5),
-            ])
-        ]), className="mb-4")
-    ])
+                    }
+                ),
+                lg=6
+            ),
+        ]),
+    ]), className="mb-4"),
 ])
 
-# --- Combined Callback for State Graphs and District Dropdown ---
+# --- UNIFIED CALLBACK to manage all updates ---
 @app.callback(
+    Output('map-graph', 'figure'),
+    Output('bar-graph', 'figure'),
     Output('district-dropdown', 'options'),
     Output('district-dropdown', 'value'),
-    Output('state-map-graph', 'figure'),
-    Output('state-bar-graph', 'figure'),
-    Input('state-dropdown', 'value')
-)
-def update_state_level(selected_state):
-    """
-    On state selection, this callback:
-    1. Populates the district dropdown with districts of the selected state.
-    2. Sets the dropdown's value to the first district.
-    3. Generates and displays the state-level choropleth map and bar chart.
-    """
-    empty_fig = go.Figure()
-    empty_fig.update_layout(paper_bgcolor='white', plot_bgcolor='white', annotations=[dict(text="No data available", xref="paper", yref="paper", showarrow=False, font=dict(size=16))])
-
-    if not selected_state:
-        return [], None, empty_fig, empty_fig
-
-    # Load district data
-    districts_geo_path = f'{STATES_DIR}/{selected_state}/{selected_state}_DISTRICTS.geojson'
-    gdf_districts = load_geo(districts_geo_path)
-    if gdf_districts is None or 'dtname' not in gdf_districts.columns:
-        return [], None, empty_fig, empty_fig
-
-    # Update dropdown
-    districts = sorted(gdf_districts['dtname'].unique())
-    options = [{'label': district, 'value': district} for district in districts]
-    value = districts[0] if districts else None
-
-    # Generate random data and plots
-    geo_key = "dtname"
-    np.random.seed(42)
-    df_random = pd.DataFrame({
-        geo_key: gdf_districts[geo_key],
-        "Change": np.random.uniform(-50, 100, len(gdf_districts))
-    })
-
-    map_fig, bar_fig = plot_charts(
-        change_df=df_random, gdf=gdf_districts, geo_key=geo_key,
-        color_scale="RdYlGn",
-        map_title=f"District-wise Map of {selected_state.replace('_', ' ').title()}",
-        bar_title="District Data Comparison"
-    )
-    return options, value, map_fig, bar_fig
-
-# --- Callback to Toggle Between State and Sub-District Views ---
-@app.callback(
-    Output('state-view', 'style'),
-    Output('subdistrict-view', 'style'),
-    Output('district-dropdown', 'value', allow_duplicate=True),
-    Output('state-map-graph', 'clickData'), # Output to reset clickData after use
-    Input('state-map-graph', 'clickData'),
-    Input('back-button', 'n_clicks'),
+    Output('view-level-store', 'data'),
+    Output('back-button', 'style'),
+    Output('view-title', 'children'),
+    Output('error-message', 'children'),
+    Output('map-graph', 'clickData'), # To reset clickData
     Input('state-dropdown', 'value'),
-    prevent_initial_call=True
+    Input('district-dropdown', 'value'),
+    Input('map-graph', 'clickData'),
+    Input('back-button', 'n_clicks'),
+    State('view-level-store', 'data')
 )
-def toggle_views(clickData, back_clicks, state_val):
+def update_view(selected_state, selected_district, clickData, back_clicks, current_view):
     """
-    Manages the visibility of state vs. sub-district views.
-    - On district click: Hides state view, shows sub-district view, and updates district dropdown value.
-    - On 'Back' button click or state change: Shows state view and hides sub-district view.
+    This single callback handles all logic:
+    - Displays state-level data.
+    - Drills down to sub-district level on map click or district dropdown change.
+    - Returns to state-level on 'back' button click or state change.
     """
     triggered_id = dash.ctx.triggered_id
-    show = {'display': 'block'}
-    hide = {'display': 'none'}
-    print(clickData)
-
-
-    if triggered_id == 'state-map-graph' and clickData:
-        clicked_district = clickData['points'][0]['text'].split("<br>")[0]
-        return hide, show, clicked_district, None # Reset clickData
-
-    elif triggered_id in ['back-button', 'state-dropdown']:
-        return show, hide, no_update, None # Reset clickData
-
-    raise PreventUpdate
-
-
-# --- Callback for Sub-District Level Graphs ---
-@app.callback(
-    Output('subdistrict-map-graph', 'figure'),
-    Output('subdistrict-bar-graph', 'figure'),
-    Output('error-message', 'children'),
-    Input('state-dropdown', 'value'),
-    Input('district-dropdown', 'value')
-)
-def update_subdistrict_graphs(selected_state, selected_district):
-    """
-    Generates and updates the sub-district-level map and bar chart
-    based on the selected state and district. This is triggered when the
-    district dropdown value changes (either by user or by clicking the map).
-    """
-    # Clear previous errors
     error_message = None
-
     empty_fig = go.Figure()
     empty_fig.update_layout(paper_bgcolor='white', plot_bgcolor='white', annotations=[dict(text="No data to display", xref="paper", yref="paper", showarrow=False, font=dict(size=16))])
 
-    if not selected_state or not selected_district:
-        # This prevents an error on initial load before a district is selected
-        return empty_fig, empty_fig, None
-    print(selected_district)
-    # Load sub-district data
-    sub_districts_geo_path = f'{STATES_DIR}/{selected_state}/{selected_state}_SUBDISTRICTS.geojson'
-    gdf_state_subdistricts = load_geo(sub_districts_geo_path)
+    # --- LOGIC FOR STATE VIEW ---
+    def show_state_view(state):
+        gdf_districts = load_geo(f'{STATES_DIR}/{state}/{state}_DISTRICTS.geojson')
+        if gdf_districts is None or 'dtname' not in gdf_districts.columns:
+            return empty_fig, empty_fig, [], None, 'state', {'display': 'none'}, f"Data for {state}", dbc.Alert("Could not load district data.", "danger"), None
 
-    if gdf_state_subdistricts is None or gdf_state_subdistricts.empty:
-        error_message = dbc.Alert(f"Could not load sub-districts geo-data for {selected_state}.", color="danger")
-        return empty_fig, empty_fig, error_message
+        districts = sorted(gdf_districts['dtname'].unique())
+        options = [{'label': d, 'value': d} for d in districts]
+        value = districts[0] if districts else None
 
-    # Filter for the selected district
-    district_key, sub_district_key = "dtname", "sdtname"
-    print(gdf_state_subdistricts)
-    gdf_filtered = gdf_state_subdistricts[
-        (gdf_state_subdistricts[district_key].str.strip().str.lower() == selected_district.strip().lower())
-    ]
+        np.random.seed(42)
+        df_random = pd.DataFrame({"dtname": gdf_districts["dtname"], "Change": np.random.uniform(-50, 100, len(gdf_districts))})
 
-    if gdf_filtered.empty:
-        error_message = dbc.Alert(f"No sub-district data found for {selected_district}, {selected_state}.", color="warning")
-        return empty_fig, empty_fig, error_message
+        map_fig, bar_fig = plot_charts(df_random, gdf_districts, "dtname", "RdYlGn",
+                                       f"District-wise Map of {state.replace('_', ' ').title()}", "District Data Comparison")
 
-    # Generate random data and plots
-    np.random.seed(42)
-    df_random = pd.DataFrame({
-        sub_district_key: gdf_filtered[sub_district_key],
-        "Change": np.random.uniform(0, 100, len(gdf_filtered))
-    })
+        return map_fig, bar_fig, options, value, 'state', {'display': 'none'}, f"State View: {state.replace('_', ' ').title()}", None, None
 
-    map_fig, bar_fig = plot_charts(
-        change_df=df_random, gdf=gdf_filtered, geo_key=sub_district_key,
-        color_scale="Viridis",
-        map_title=f"Sub-District Map of {selected_district.title()}",
-        bar_title=f"Sub-District Data for {selected_district.title()}"
-    )
-    return map_fig, bar_fig, error_message
+    # --- LOGIC FOR SUB-DISTRICT VIEW ---
+    def show_subdistrict_view(state, district):
+        gdf_state_subdistricts = load_geo(f'{STATES_DIR}/{state}/{state}_SUBDISTRICTS.geojson')
+        if gdf_state_subdistricts is None:
+            return empty_fig, empty_fig, no_update, no_update, 'district', {'display': 'block'}, f"Sub-District View: {district}", dbc.Alert(f"Could not load sub-districts geo-data for {state}.", "danger"), None
+
+        gdf_filtered = gdf_state_subdistricts[gdf_state_subdistricts["dtname"].str.strip().str.lower() == district.strip().lower()]
+        if gdf_filtered.empty:
+            return empty_fig, empty_fig, no_update, no_update, 'district', {'display': 'block'}, f"Sub-District View: {district}", dbc.Alert(f"No sub-district data for {district}.", "warning"), None
+
+        np.random.seed(42)
+        df_random = pd.DataFrame({"sdtname": gdf_filtered["sdtname"], "Change": np.random.uniform(0, 100, len(gdf_filtered))})
+
+        map_fig, bar_fig = plot_charts(df_random, gdf_filtered, "sdtname", "RdYlGn",
+                                       f"Sub-District Map of {district.title()}", f"Sub-District Data for {district.title()}")
+
+        return map_fig, bar_fig, no_update, district, 'district', {'display': 'block'}, f"Sub-District View: {district.title()}", None, None
+
+    # --- DETERMINE ACTION BASED ON TRIGGER ---
+    if triggered_id in ['state-dropdown', 'back-button']:
+        return show_state_view(selected_state)
+
+    if triggered_id == 'map-graph' and clickData and current_view == 'state':
+        # print(clickData)
+        if 'hovertext' in clickData['points'][0]:
+            clicked_district = clickData['points'][0]['hovertext'].split("<br>")[0]
+            return show_subdistrict_view(selected_state, clicked_district)
+        else:
+            clicked_district = clickData['points'][0]['text'].split("<br>")[0]
+            return show_subdistrict_view(selected_state, clicked_district)
+
+
+
+    if triggered_id == 'district-dropdown' and selected_district:
+        return show_subdistrict_view(selected_state, selected_district)
+
+    if not triggered_id: # Initial load
+        return show_state_view(selected_state)
+
+    raise PreventUpdate
 
 # --- Run the App ---
 if __name__ == '__main__':
     if not os.path.exists(BASE_DIR):
         print("="*50)
         print("ERROR: 'INDIAN-SHAPEFILES-master' directory not found.")
-        print("Please download and unzip them from:")
+        print("Please download and unzip it from:")
         print("https://github.com/datameet/INDIAN-SHAPEFILES/archive/refs/heads/master.zip")
         print(f"And ensure the '{BASE_DIR}' directory is in the same folder as this script.")
         print("="*50)
