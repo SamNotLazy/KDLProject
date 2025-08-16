@@ -1,104 +1,39 @@
+# streamlit_app.py
 import streamlit as st
 import streamlit.components.v1 as components
-from threading import Thread
-from werkzeug.serving import make_server
-import time
-import requests
 
-# Import the server object from your Dash app
-# Make sure you have a file named PlotlyMap.py with a Dash app in it
-from PlotlyMap import server as dash_server
+# --- Page Configuration ---
+# Set the page to a wide layout to give the Dash app maximum space.
+# This is the only "UI" configuration needed from the Streamlit side.
+st.set_page_config(
+    page_title="Dash App Viewer",
+    layout="wide"
+)
 
-# Define the host and port for the Dash app
-DASH_HOST = '0.0.0.0'
-DASH_PORT = 8050
+# --- Important Notes on Running ---
+# This Streamlit script acts as a simple, barebones container.
+# It does not have any of its own UI elements.
+#
+# To run this setup:
+# 1. Run your Dash app in one terminal (e.g., `python your_dash_app.py`).
+# 2. Run this Streamlit app in a second terminal (`streamlit run streamlit_app.py`).
+#
+# To "tear down" or stop, simply stop both terminal processes (Ctrl+C).
+# Rerunning this Streamlit script will just reload the iframe; it doesn't need
+# complex teardown logic because the Dash app is a separate, independent process.
 
-# --- Function to run the Dash app ---
-# This function is cached so it only runs once
-@st.cache_resource
-def run_dash_server():
-    """Starts the Dash server in a background thread."""
-    thread = Thread(target=make_server(DASH_HOST, DASH_PORT, dash_server).serve_forever)
-    thread.daemon = True
-    thread.start()
-    time.sleep(2) # Give the server a moment to start
-    return thread
+# --- Embedded Dash App ---
 
-# --- Main Streamlit App ---
+# The URL where your Dash app is being served.
+# Make sure this port matches the one your Dash app is running on.
+DASH_APP_URL = "http://127.0.0.1:8050"
 
-# Set the page to a wide layout
-st.set_page_config(page_title="Streamlit + Dash Fullscreen", layout="wide")
-
-st.title("Dash App with a Fullscreen Button 🚀")
-st.write("The Dash app below is running in the background. Click the button to enter a true fullscreen mode.")
-
-
-# Start the Dash server in the background
-run_dash_server()
-
-# --- MODIFICATION START ---
-# We replace the simple iframe with a custom HTML component that includes a fullscreen button.
-
+# Use streamlit.components.v1.iframe to embed the Dash app.
+# The height is set to a large value to fill most of the vertical space.
+# You can adjust this value based on your Dash app's content.
 try:
-    # Check if the Dash server is running
-    requests.get(f"http://localhost:{DASH_PORT}")
-
-    # Embed the custom HTML component
-    components.html(
-        f"""
-        <style>
-            #fullscreen-btn {{
-                position: relative;
-                z-index: 9999;
-                padding: 10px 20px;
-                background-color: #007bff;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                font-family: sans-serif;
-                font-weight: bold;
-                margin-bottom: 10px;
-                transition: background-color 0.3s;
-            }}
-            #fullscreen-btn:hover {{
-                background-color: #0056b3;
-            }}
-            #iframe-container {{
-                border: 2px solid #e6eaf1;
-                border-radius: 8px;
-                overflow: hidden; /* Keeps the iframe corners rounded */
-            }}
-        </style>
-
-        <div>
-            <button id="fullscreen-btn">View Fullscreen</button>
-            <div id="iframe-container">
-                <iframe id="dash-iframe" src="http://localhost:{DASH_PORT}" width="100%" height="800" frameBorder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <script>
-            const fullscreenBtn = document.getElementById('fullscreen-btn');
-            const iframe = document.getElementById('dash-iframe');
-
-            fullscreenBtn.addEventListener('click', function () {{
-                if (iframe.requestFullscreen) {{
-                    iframe.requestFullscreen();
-                }} else if (iframe.mozRequestFullScreen) {{ /* Firefox */
-                    iframe.mozRequestFullScreen();
-                }} else if (iframe.webkitRequestFullscreen) {{ /* Chrome, Safari & Opera */
-                    iframe.webkitRequestFullscreen();
-                }} else if (iframe.msRequestFullscreen) {{ /* IE/Edge */
-                    iframe.msRequestFullscreen();
-                }}
-            }});
-        </script>
-        """,
-        height=900  # Adjust this height to fit your app's initial view
-    )
-
-except requests.ConnectionError:
-    st.error(f"Failed to connect to the Dash server on port {DASH_PORT}. Please make sure it has started correctly.")
-
-# --- MODIFICATION END ---
+    components.iframe(DASH_APP_URL, height=1000, scrolling=True)
+except Exception as e:
+    # If the Dash app is not running, display an error message.
+    st.error(f"Could not connect to the Dash app. Please ensure it's running at {DASH_APP_URL}.")
+    st.error(f"Details: {e}")

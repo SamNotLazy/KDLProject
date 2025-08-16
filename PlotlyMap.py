@@ -10,9 +10,10 @@ import plotly.graph_objects as go
 import numpy as np
 import os
 
-# from PlotlyMap import plot_charts
 # --- Dash App and Cache Initialization ---
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+# This is the single, correct place to initialize the app.
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP],
+                meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1.0'}])
 server = app.server
 
 # Configure caching
@@ -21,11 +22,11 @@ cache = Cache(app.server, config={
     'CACHE_DIR': 'cache-directory'
 })
 
-# --- Cached GeoJSON Loader (Unchanged Signature) ---
+# --- Cached GeoJSON Loader ---
 @cache.memoize(timeout=3600)  # Cache for 1 hour
 def load_geo(file_path):
     """
-    Loads a GeoJSON file into a GeoDataFrame.
+    Loads a GeoJSON file into a GeoDataFrame, with caching.
     """
     if not os.path.exists(file_path):
         print(f"File not found: {file_path}")
@@ -57,81 +58,66 @@ def plot_charts(change_df, gdf, geo_key, color_scale, map_title, bar_title):
     minx, miny, maxx, maxy = gdf.total_bounds
     center_lon = (minx + maxx) / 2
     center_lat = (miny + maxy) / 2
-    def create_Map():
-        # --- Choropleth Map ---
-        map_fig = px.choropleth_map(
-            plot_df,
-            geojson=plot_df.geometry,
-            locations=plot_df.index,
-            color=map_col,
-            hover_name=geo_key,
-            hover_data={map_col: True, bar_col: True},
-            map_style="white-bg", # Using a different mapbox style for better visuals
-            opacity=0.7,
-            color_continuous_scale=color_scale,
-            labels={map_col: map_col},
-            center={"lat": center_lat, "lon": center_lon},
-            zoom=5 # A sensible default zoom
-        )
 
-        # Add text labels
-        map_fig.add_trace(go.Scattermapbox(
-            lon=plot_df.geometry.centroid.x,
-            lat=plot_df.geometry.centroid.y,
-            mode='text',
-            text=plot_df.apply(lambda row: f"{row[geo_key]}<br>{row[map_col]}", axis=1),
-            textfont=dict(size=9, color='black'),
-            hoverinfo='none'
-        ))
-        map_fig.update_layout(
-            margin={"r": 0, "t": 30, "l": 0, "b": 0},
-            title=map_title,
-            paper_bgcolor='white',
-            font_color='black'
-        )
-        return map_fig
+    # --- Choropleth Map ---
+    map_fig = px.choropleth_map(
+        plot_df,
+        geojson=plot_df.geometry,
+        locations=plot_df.index,
+        color=map_col,
+        hover_name=geo_key,
+        hover_data={map_col: True, bar_col: True},
+        map_style="white-bg", # Using a token-free map style
+        opacity=0.7,
+        color_continuous_scale=color_scale,
+        labels={map_col: map_col},
+        center={"lat": center_lat, "lon": center_lon},
+        zoom=5 # A sensible default zoom
+    )
 
-    def create_Bar():
-        # --- Bar Chart ---
-        bar_df_sorted = plot_df.sort_values(bar_col, ascending=True).copy()
-        bar_fig = px.bar(
-            bar_df_sorted,
-            x=bar_col, y=geo_key, orientation='h',
-            title=bar_title,
-            labels={geo_key: 'District', bar_col: bar_col},
-            color=bar_col,
-            color_continuous_scale=color_scale,
-            height=max(400, num_bars * 25), # Dynamically set height
-            text=bar_col
-        )
-        bar_fig.update_traces(
-            texttemplate="%{text:.2f}",
-            textposition="outside",
-        )
-        bar_fig.update_coloraxes(showscale=False)
-        bar_fig.update_layout(
-            margin=dict(l=10, r=50, t=50, b=10),
-            yaxis=dict(tickfont=dict(size=10)),
-            paper_bgcolor='white',
-            plot_bgcolor='white',
-            font_color='black'
-        )
-        return bar_fig
-    return create_Map(), create_Bar()
+    map_fig.add_trace(go.Scattermap(
+        lon=plot_df.geometry.centroid.x,
+        lat=plot_df.geometry.centroid.y,
+        mode='text',
+        text=plot_df.apply(lambda row: f"{row[geo_key]}<br>{row[map_col]}", axis=1),
+        textfont=dict(size=9, color='black'),
+        hoverinfo='none'
+    ))
 
 
+    # CORRECTED: Removed the invalid properties that caused the ValueError.
+    map_fig.update_layout(
+        margin={"r": 0, "t": 30, "l": 0, "b": 0},
+        title=map_title,
+        paper_bgcolor='white',
+        font_color='black'
+    )
 
-
-
-
-
-
-
-
-# --- App Initialization ---
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP],
-                meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1.0'}])
-server = app.server
+    # --- Bar Chart ---
+    bar_df_sorted = plot_df.sort_values(bar_col, ascending=True).copy()
+    bar_fig = px.bar(
+        bar_df_sorted,
+        x=bar_col, y=geo_key, orientation='h',
+        title=bar_title,
+        labels={geo_key: 'District', bar_col: bar_col},
+        color=bar_col,
+        color_continuous_scale=color_scale,
+        height=max(400, num_bars * 25), # Dynamically set height
+        text=bar_col
+    )
+    bar_fig.update_traces(
+        texttemplate="%{text:.2f}",
+        textposition="outside",
+    )
+    bar_fig.update_coloraxes(showscale=False)
+    bar_fig.update_layout(
+        margin=dict(l=10, r=50, t=50, b=10),
+        yaxis=dict(tickfont=dict(size=10)),
+        paper_bgcolor='white',
+        plot_bgcolor='white',
+        font_color='black'
+    )
+    return map_fig, bar_fig
 
 # --- Data Preparation and Configuration ---
 BASE_DIR = 'INDIAN-SHAPEFILES-master'
@@ -147,14 +133,15 @@ except Exception as e:
     print(f"Error accessing state directory at {STATES_DIR}: {e}")
     state_list = []
 
-
-
-
-
-
-
 # --- Dash UI Layout ---
-app.layout = dbc.Container(fluid=True, style={'backgroundColor': '#f8f9fa'}, children=[
+# CORRECTED: Added config property to dcc.Graph to disable interactions
+map_config = {
+    'scrollZoom': False,
+    'displayModeBar': True, # Can be False to hide the mode bar completely
+    'modeBarButtonsToRemove': ['zoom2d', 'pan2d', 'select2d', 'lasso2d', 'autoScale2d', 'resetScale2d']
+}
+
+app.layout = dbc.Container(fluid=True, style={'backgroundColor': '#ffffff'}, children=[
 
     dbc.Row([
         dbc.Col(dcc.Dropdown(
@@ -169,7 +156,7 @@ app.layout = dbc.Container(fluid=True, style={'backgroundColor': '#f8f9fa'}, chi
             clearable=False,
             placeholder="Select a District"
         ), width=4),
-    ], className="mb-4 justify-content-center"),
+    ], className="my-4 justify-content-center"),
 
     html.Div(id='error-message', className="px-5"),
 
@@ -178,7 +165,7 @@ app.layout = dbc.Container(fluid=True, style={'backgroundColor': '#f8f9fa'}, chi
         dbc.Card(dbc.CardBody([
             html.H3("State Level View", className="text-center mt-2 mb-4"),
             dbc.Row([
-                dbc.Col(dcc.Graph(id='state-map-graph', style={'height': '70vh'}), width=12, lg=7),
+                dbc.Col(dcc.Graph(id='state-map-graph', style={'height': '70vh'}, config=map_config), width=12, lg=7),
                 dbc.Col(html.Div([
                     dcc.Graph(id='state-bar-graph', responsive=False)
                 ], style={'height': '70vh', 'overflowY': 'auto'}), width=12, lg=5),
@@ -194,7 +181,7 @@ app.layout = dbc.Container(fluid=True, style={'backgroundColor': '#f8f9fa'}, chi
                 dbc.Col(html.H3("Sub-District Level View", className="text-center"), width=True),
             ], align="center", className="mb-4"),
             dbc.Row([
-                dbc.Col(dcc.Graph(id='subdistrict-map-graph', style={'height': '70vh'}), width=12, lg=7),
+                dbc.Col(dcc.Graph(id='subdistrict-map-graph', style={'height': '70vh'}, config=map_config), width=12, lg=7),
                 dbc.Col(html.Div([
                     dcc.Graph(id='subdistrict-bar-graph', responsive=False)
                 ], style={'height': '70vh', 'overflowY': 'auto'}), width=12, lg=5),
@@ -271,13 +258,15 @@ def toggle_views(clickData, back_clicks, state_val):
     triggered_id = dash.ctx.triggered_id
     show = {'display': 'block'}
     hide = {'display': 'none'}
+    print(clickData)
+
 
     if triggered_id == 'state-map-graph' and clickData:
-        clicked_district = clickData['points'][0]['hovertext']
+        clicked_district = clickData['points'][0]['text'].split("<br>")[0]
         return hide, show, clicked_district, None # Reset clickData
 
     elif triggered_id in ['back-button', 'state-dropdown']:
-        return show, hide, dash.no_update, None # Reset clickData
+        return show, hide, no_update, None # Reset clickData
 
     raise PreventUpdate
 
@@ -303,8 +292,9 @@ def update_subdistrict_graphs(selected_state, selected_district):
     empty_fig.update_layout(paper_bgcolor='white', plot_bgcolor='white', annotations=[dict(text="No data to display", xref="paper", yref="paper", showarrow=False, font=dict(size=16))])
 
     if not selected_state or not selected_district:
-        return empty_fig, empty_fig, dbc.Alert("Please select a state and a district.", color="info")
-
+        # This prevents an error on initial load before a district is selected
+        return empty_fig, empty_fig, None
+    print(selected_district)
     # Load sub-district data
     sub_districts_geo_path = f'{STATES_DIR}/{selected_state}/{selected_state}_SUBDISTRICTS.geojson'
     gdf_state_subdistricts = load_geo(sub_districts_geo_path)
@@ -315,6 +305,7 @@ def update_subdistrict_graphs(selected_state, selected_district):
 
     # Filter for the selected district
     district_key, sub_district_key = "dtname", "sdtname"
+    print(gdf_state_subdistricts)
     gdf_filtered = gdf_state_subdistricts[
         (gdf_state_subdistricts[district_key].str.strip().str.lower() == selected_district.strip().lower())
     ]
