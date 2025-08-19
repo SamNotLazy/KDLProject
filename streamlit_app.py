@@ -1,39 +1,36 @@
-# streamlit_app.py
 import streamlit as st
-import streamlit.components.v1 as components
+import subprocess
+from time import sleep
 
-# --- Page Configuration ---
-# Set the page to a wide layout to give the Dash app maximum space.
-# This is the only "UI" configuration needed from the Streamlit side.
-st.set_page_config(
-    page_title="Dash App Viewer",
-    layout="wide"
-)
+# Define the port your Dash app will run on
+DASH_PORT = 8050
 
-# --- Important Notes on Running ---
-# This Streamlit script acts as a simple, barebones container.
-# It does not have any of its own UI elements.
-#
-# To run this setup:
-# 1. Run your Dash app in one terminal (e.g., `python your_dash_app.py`).
-# 2. Run this Streamlit app in a second terminal (`streamlit run streamlit_app.py`).
-#
-# To "tear down" or stop, simply stop both terminal processes (Ctrl+C).
-# Rerunning this Streamlit script will just reload the iframe; it doesn't need
-# complex teardown logic because the Dash app is a separate, independent process.
+# Use st.cache_resource to run this function only once.
+@st.cache_resource
+def start_dash_app():
+    # Use gunicorn to run the Dash app
+    # 'dash_app:server' refers to the 'server' variable in your 'dash_app.py'
+    process = subprocess.Popen(
+        ["gunicorn", "PlotlyMap:server", f"--bind=0.0.0.0:{DASH_PORT}"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True
+    )
+    st.write("Dash App Started!")
+    # Give the app a moment to start
+    sleep(5)
+    return process
 
-# --- Embedded Dash App ---
+# --- Main Streamlit App ---
 
-# The URL where your Dash app is being served.
-# Make sure this port matches the one your Dash app is running on.
-DASH_APP_URL = "http://127.0.0.1:8050"
+st.set_page_config(layout="wide")
 
-# Use streamlit.components.v1.iframe to embed the Dash app.
-# The height is set to a large value to fill most of the vertical space.
-# You can adjust this value based on your Dash app's content.
-try:
-    components.iframe(DASH_APP_URL, height=1000, scrolling=True)
-except Exception as e:
-    # If the Dash app is not running, display an error message.
-    st.error(f"Could not connect to the Dash app. Please ensure it's running at {DASH_APP_URL}.")
-    st.error(f"Details: {e}")
+
+# Start the Dash app
+dash_process = start_dash_app()
+
+st.write(f"It's running in the background and served at http://localhost:{DASH_PORT}")
+
+st.components.v1.iframe(f"http://localhost:{DASH_PORT}")
+
+st.info("This Streamlit app is the 'parent' that launched the Dash app.")
