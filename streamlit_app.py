@@ -31,6 +31,7 @@ dash_process = start_dash_app()
 
 st.write(f"It's running in the background and served at http://localhost:{DASH_PORT}")
 
-st.components.v1.iframe(f"http://localhost:{DASH_PORT}")
+# Explicitly set width to 100% and provide a height for the iframe
+st.components.v1.iframe(f"http://localhost:{DASH_PORT}", width='100%', height=800)
 
 st.info("This Streamlit app is the 'parent' that launched the Dash app.")
