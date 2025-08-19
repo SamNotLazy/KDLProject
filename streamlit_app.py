@@ -1,37 +1,28 @@
+# streamlit_app.py
 import streamlit as st
-import subprocess
-from time import sleep
 
-# Define the port your Dash app will run on
-DASH_PORT = 8050
+# --- Configuration ---
+# Replace this with the public URL you get after deploying your Dash app to Cloud Run
+# Example: "https://my-dash-app-xyz-uc.a.run.app"
+DASH_APP_URL = "https://78520081da55.ngrok-free.app/"
 
-# Use st.cache_resource to run this function only once.
-@st.cache_resource
-def start_dash_app():
-    # Use gunicorn to run the Dash app
-    # 'dash_app:server' refers to the 'server' variable in your 'dash_app.py'
-    process = subprocess.Popen(
-        ["python", "PlotlyMap.py"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True
-    )
-    st.write("Dash App Started!")
-    # Give the app a moment to start
-    sleep(5)
-    return process
 
 # --- Main Streamlit App ---
 
 st.set_page_config(layout="wide")
 
+st.title("Streamlit App with Embedded Dash App")
+st.write("This Streamlit app embeds a Dash application that is hosted as a separate service on Google Cloud Run.")
 
-# Start the Dash app
-dash_process = start_dash_app()
 
-st.write(f"It's running in the background and served at http://localhost:{DASH_PORT}")
+# --- Embedding the Dash App ---
 
-# Explicitly set width to 100% and provide a height for the iframe
-st.components.v1.iframe(f"http://localhost:8050", width='100%', height=800)
+if DASH_APP_URL == "https://your-dash-app-url.a.run.app":
+    st.warning("Please update the `DASH_APP_URL` variable in the code with the actual URL of your deployed Dash app.")
+else:
+    st.header("Embedded Dash Application")
+    st.write(f"The Dash app is running at: {DASH_APP_URL}")
+    # Embed the Dash app using an iframe
+    st.components.v1.iframe(DASH_APP_URL, height=800)
 
-st.info("This Streamlit app is the 'parent' that launched the Dash app.")
+st.info("This Streamlit app and the embedded Dash app are running as two separate, independent services on Google Cloud Run.")
