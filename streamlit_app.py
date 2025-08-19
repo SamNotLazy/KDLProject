@@ -11,7 +11,7 @@ def start_dash_app():
     # Use gunicorn to run the Dash app
     # 'dash_app:server' refers to the 'server' variable in your 'dash_app.py'
     process = subprocess.Popen(
-        ["gunicorn", "PlotlyMap:server", f"--bind=0.0.0.0:{DASH_PORT}"],
+        ["python", "PlotlyMap.py"],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         text=True
@@ -32,6 +32,6 @@ dash_process = start_dash_app()
 st.write(f"It's running in the background and served at http://localhost:{DASH_PORT}")
 
 # Explicitly set width to 100% and provide a height for the iframe
-st.components.v1.iframe(f"http://localhost:{DASH_PORT}", width='100%', height=800)
+st.components.v1.iframe(f"http://localhost:8050", width='100%', height=800)
 
 st.info("This Streamlit app is the 'parent' that launched the Dash app.")
