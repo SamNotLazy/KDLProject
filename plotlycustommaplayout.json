@@ -1,0 +1,4581 @@
+{
+    "ANDAMAN & NICOBAR": {
+        "districts": {
+            "Nicobars": {
+                "mapbox_center": {
+                    "lon": 93.32938639643663,
+                    "lat": 8.006554962386335,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "North  & Middle Andaman": {
+                "mapbox_center": {
+                    "lon": 92.87445503994988,
+                    "lat": 12.868450947741746,
+                    "mapbox_zoom": 7
+                }
+            },
+            "South Andaman": {
+                "mapbox_center": {
+                    "lon": 92.663328226195,
+                    "lat": 11.420845801067284,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 93.0733647662899,
+            "lat": 10.213683897850284
+        },
+        "mapbox_zoom": 5
+    },
+    "ANDHRA PRADESH": {
+        "districts": {
+            "Anantapur": {
+                "mapbox_center": {
+                    "lon": 77.61495144902398,
+                    "lat": 14.458301690749561,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chittoor": {
+                "mapbox_center": {
+                    "lon": 79.05846318901578,
+                    "lat": 13.309433231885269,
+                    "mapbox_zoom": 7
+                }
+            },
+            "East Godavari": {
+                "mapbox_center": {
+                    "lon": 81.74505380777265,
+                    "lat": 17.16092073352704,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Guntur": {
+                "mapbox_center": {
+                    "lon": 80.05549446277641,
+                    "lat": 16.264639828139295,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Krishna": {
+                "mapbox_center": {
+                    "lon": 80.77670054113595,
+                    "lat": 16.42987112396476,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kurnool": {
+                "mapbox_center": {
+                    "lon": 77.9524627337259,
+                    "lat": 15.524672450493796,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Prakasam": {
+                "mapbox_center": {
+                    "lon": 79.60584623906189,
+                    "lat": 15.634815453737975,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sri Potti Sriramulu Nell*": {},
+            "Srikakulam": {
+                "mapbox_center": {
+                    "lon": 84.14565813766731,
+                    "lat": 18.622528444980315,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Visakhapatnam": {
+                "mapbox_center": {
+                    "lon": 82.69218606285813,
+                    "lat": 17.899705760424382,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Vizianagaram": {
+                "mapbox_center": {
+                    "lon": 83.40609035476314,
+                    "lat": 18.502031135437008,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "West Godavari": {
+                "mapbox_center": {
+                    "lon": 81.35397663171148,
+                    "lat": 16.98142529576844,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Y.S.R.": {
+                "mapbox_center": {
+                    "lon": 78.70650840759518,
+                    "lat": 14.476738900546735,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 80.76266863810739,
+            "lat": 15.895937511014829
+        },
+        "mapbox_zoom": 5
+    },
+    "ARUNACHAL PRADESH": {
+        "districts": {
+            "Anjaw": {
+                "mapbox_center": {
+                    "lon": 96.8422350742679,
+                    "lat": 28.03736293497854,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Changlang": {
+                "mapbox_center": {
+                    "lon": 96.39729084036028,
+                    "lat": 27.26972368282614,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "East Kameng": {
+                "mapbox_center": {
+                    "lon": 92.91741614510693,
+                    "lat": 27.554284394954813,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "East Siang": {
+                "mapbox_center": {
+                    "lon": 95.31846671581391,
+                    "lat": 28.0658295652173,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kamle": {
+                "mapbox_center": {
+                    "lon": 94.11948245844015,
+                    "lat": 27.731102893954258,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kra Daadi": {
+                "mapbox_center": {
+                    "lon": 93.70499050315725,
+                    "lat": 27.969743706337436,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kurung Kumey": {
+                "mapbox_center": {
+                    "lon": 93.14072779136809,
+                    "lat": 27.990962211955065,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Lepa Rada": {
+                "mapbox_center": {
+                    "lon": 94.72056288894856,
+                    "lat": 27.917514742678193,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Lohit": {
+                "mapbox_center": {
+                    "lon": 96.22604118395104,
+                    "lat": 27.95858175966159,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Longding": {},
+            "Lower Dibang Valley": {
+                "mapbox_center": {
+                    "lon": 95.84573253046807,
+                    "lat": 28.21160458054532,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Lower Siang": {
+                "mapbox_center": {
+                    "lon": 94.67293526361344,
+                    "lat": 27.803688387487107,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Lower Subansiri": {
+                "mapbox_center": {
+                    "lon": 93.82469092089221,
+                    "lat": 27.577822190664627,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Namsai": {},
+            "Pakke Kessang": {
+                "mapbox_center": {
+                    "lon": 92.99438466597371,
+                    "lat": 27.156535149208647,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Papum Pare": {
+                "mapbox_center": {
+                    "lon": 93.71547701222839,
+                    "lat": 27.302984987696647,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Shi Yomi": {
+                "mapbox_center": {
+                    "lon": 94.26151250221172,
+                    "lat": 28.687347514434407,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Siang": {
+                "mapbox_center": {
+                    "lon": 94.83701550751178,
+                    "lat": 28.477058996738478,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Tawang": {
+                "mapbox_center": {
+                    "lon": 92.00941484875078,
+                    "lat": 27.66174876065414,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Tirap": {
+                "mapbox_center": {
+                    "lon": 95.43749808808822,
+                    "lat": 26.9577573750141,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Upper Dibang Valley": {},
+            "Upper Siang": {
+                "mapbox_center": {
+                    "lon": 94.79955401877982,
+                    "lat": 28.75030560332874,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Upper Subansiri": {
+                "mapbox_center": {
+                    "lon": 93.88889660175789,
+                    "lat": 28.236276020374902,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "West Kameng": {
+                "mapbox_center": {
+                    "lon": 92.42858085478876,
+                    "lat": 27.335587643141388,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "West Siang": {
+                "mapbox_center": {
+                    "lon": 94.65269005467525,
+                    "lat": 28.19474574397283,
+                    "mapbox_zoom": 8.5
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 94.47897847944078,
+            "lat": 28.05627870812826
+        },
+        "mapbox_zoom": 5.5
+    },
+    "ASSAM": {
+        "districts": {
+            "Baksa": {
+                "mapbox_center": {
+                    "lon": 91.3357053962051,
+                    "lat": 26.628110401507435,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Barpeta": {
+                "mapbox_center": {
+                    "lon": 90.97169186666738,
+                    "lat": 26.377567446237578,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Biswanath": {},
+            "Bongaigaon": {
+                "mapbox_center": {
+                    "lon": 90.62578929672563,
+                    "lat": 26.34892654512389,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Cachar": {
+                "mapbox_center": {
+                    "lon": 92.83939009604666,
+                    "lat": 24.758494772957114,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Charaideo": {},
+            "Chirang": {
+                "mapbox_center": {
+                    "lon": 90.64651966059594,
+                    "lat": 26.645108751956748,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Darrang": {
+                "mapbox_center": {
+                    "lon": 92.06250496314031,
+                    "lat": 26.434342404488405,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Dhemaji": {
+                "mapbox_center": {
+                    "lon": 94.86229856962376,
+                    "lat": 27.593967907748585,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Dhubri": {
+                "mapbox_center": {
+                    "lon": 90.09109722954277,
+                    "lat": 26.132224587904318,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Dibrugarh": {
+                "mapbox_center": {
+                    "lon": 95.02586303726773,
+                    "lat": 27.397994404494796,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Dima Hasao": {
+                "mapbox_center": {
+                    "lon": 92.9970775169548,
+                    "lat": 25.398475368305814,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Goalpara": {
+                "mapbox_center": {
+                    "lon": 90.60756529448179,
+                    "lat": 26.04972315165688,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Golaghat": {
+                "mapbox_center": {
+                    "lon": 93.73233755647473,
+                    "lat": 26.369983455174832,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Hailakandi": {
+                "mapbox_center": {
+                    "lon": 92.59950008164125,
+                    "lat": 24.507816937975058,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Hojai": {},
+            "Jorhat": {
+                "mapbox_center": {
+                    "lon": 94.27999034140541,
+                    "lat": 26.765600814619397,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kamrup": {
+                "mapbox_center": {
+                    "lon": 91.38162641024829,
+                    "lat": 26.12681552443639,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kamrup Metropolitan": {
+                "mapbox_center": {
+                    "lon": 91.86848343828345,
+                    "lat": 26.13636900784401,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Karbi Anglong": {
+                "mapbox_center": {
+                    "lon": 93.34405582439004,
+                    "lat": 26.07141270130642,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Karimganj": {
+                "mapbox_center": {
+                    "lon": 92.3892636663179,
+                    "lat": 24.57504617408146,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kokrajhar": {
+                "mapbox_center": {
+                    "lon": 90.13266371908585,
+                    "lat": 26.490617277438112,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Lakhimpur": {
+                "mapbox_center": {
+                    "lon": 94.16335943555524,
+                    "lat": 27.171166284197376,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Majuli": {},
+            "Morigaon": {
+                "mapbox_center": {
+                    "lon": 92.27011832298687,
+                    "lat": 26.289447474128696,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Nagaon": {
+                "mapbox_center": {
+                    "lon": 92.85668727856411,
+                    "lat": 26.209319626560355,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Nalbari": {
+                "mapbox_center": {
+                    "lon": 91.40001113052878,
+                    "lat": 26.354160197175382,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Sivasagar": {
+                "mapbox_center": {
+                    "lon": 94.88367309517218,
+                    "lat": 26.993711411820094,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Sonitpur": {
+                "mapbox_center": {
+                    "lon": 93.05650650690845,
+                    "lat": 26.763714422741174,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "South Salmara Mancachar": {
+                "mapbox_center": {
+                    "lon": 90.00705983112012,
+                    "lat": 25.76055675904448,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Tinsukia": {
+                "mapbox_center": {
+                    "lon": 95.6174949292273,
+                    "lat": 27.59728619785241,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Udalguri": {
+                "mapbox_center": {
+                    "lon": 92.05308375044407,
+                    "lat": 26.70503247209438,
+                    "mapbox_zoom": 8
+                }
+            },
+            "West Karbi Anglong": {
+                "mapbox_center": {
+                    "lon": 92.60978383511375,
+                    "lat": 25.85290334456577,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 92.85819162698331,
+            "lat": 26.05390371756694
+        },
+        "mapbox_zoom": 5.5
+    },
+    "BIHAR": {
+        "districts": {
+            "Araria": {
+                "mapbox_center": {
+                    "lon": 87.37164372241001,
+                    "lat": 26.2651481512586,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Arwal": {
+                "mapbox_center": {
+                    "lon": 84.65515646851509,
+                    "lat": 25.181495242831666,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Aurangabad": {
+                "mapbox_center": {
+                    "lon": 84.37750650910775,
+                    "lat": 24.802873139667184,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Banka": {
+                "mapbox_center": {
+                    "lon": 86.82986358606354,
+                    "lat": 24.83350488310607,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Begusarai": {
+                "mapbox_center": {
+                    "lon": 86.12428621331162,
+                    "lat": 25.513133045645638,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Bhagalpur": {
+                "mapbox_center": {
+                    "lon": 87.09500808582426,
+                    "lat": 25.28693199725182,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Bhojpur": {
+                "mapbox_center": {
+                    "lon": 84.56193829956683,
+                    "lat": 25.452481236590728,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Buxar": {
+                "mapbox_center": {
+                    "lon": 84.08268699981849,
+                    "lat": 25.504392791575647,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Darbhanga": {
+                "mapbox_center": {
+                    "lon": 86.04644226623418,
+                    "lat": 26.082659704128332,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Gaya": {
+                "mapbox_center": {
+                    "lon": 84.84442248383604,
+                    "lat": 24.67957426383089,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Gopalganj": {
+                "mapbox_center": {
+                    "lon": 84.40654481072919,
+                    "lat": 26.42167617483954,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Jamui": {
+                "mapbox_center": {
+                    "lon": 86.220304694656,
+                    "lat": 24.755810806375568,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Jehanabad": {
+                "mapbox_center": {
+                    "lon": 85.01776834997764,
+                    "lat": 25.153237575057066,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Kaimur (bhabua)": {
+                "mapbox_center": {
+                    "lon": 83.60904086988862,
+                    "lat": 24.97561820354248,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Katihar": {
+                "mapbox_center": {
+                    "lon": 87.6383180351333,
+                    "lat": 25.561867515397235,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Khagaria": {
+                "mapbox_center": {
+                    "lon": 86.56788462180329,
+                    "lat": 25.492854841259373,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kishanganj": {
+                "mapbox_center": {
+                    "lon": 87.9557078250813,
+                    "lat": 26.252372802315158,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Lakhisarai": {
+                "mapbox_center": {
+                    "lon": 86.14611793822053,
+                    "lat": 25.156463415041454,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Madhepura": {
+                "mapbox_center": {
+                    "lon": 86.87133359070604,
+                    "lat": 25.780395616502563,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Madhubani": {
+                "mapbox_center": {
+                    "lon": 86.23824508079834,
+                    "lat": 26.349968847398806,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Munger": {
+                "mapbox_center": {
+                    "lon": 86.49939736457932,
+                    "lat": 25.220936845096148,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Muzaffarpur": {
+                "mapbox_center": {
+                    "lon": 85.31813198451934,
+                    "lat": 26.14868905647005,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Nalanda": {
+                "mapbox_center": {
+                    "lon": 85.53005817086716,
+                    "lat": 25.211563283742766,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Nawada": {
+                "mapbox_center": {
+                    "lon": 85.66107222461524,
+                    "lat": 24.817195101952024,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Pashchim Champaran": {
+                "mapbox_center": {
+                    "lon": 84.29563892567687,
+                    "lat": 27.05235013499812,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Patna": {
+                "mapbox_center": {
+                    "lon": 85.37792552294255,
+                    "lat": 25.467401814036414,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Purba Champaran": {
+                "mapbox_center": {
+                    "lon": 84.8909100922784,
+                    "lat": 26.639002319577752,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Purnia": {
+                "mapbox_center": {
+                    "lon": 87.43143519830133,
+                    "lat": 25.77540900940201,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Rohtas": {
+                "mapbox_center": {
+                    "lon": 83.98028206004773,
+                    "lat": 24.93919901528963,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Saharsa": {
+                "mapbox_center": {
+                    "lon": 86.59387713020752,
+                    "lat": 25.83224623939933,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Samastipur": {
+                "mapbox_center": {
+                    "lon": 85.95900268237838,
+                    "lat": 25.77461547710844,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Saran": {
+                "mapbox_center": {
+                    "lon": 84.82278877097195,
+                    "lat": 25.909993422336974,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Sheikhpura": {
+                "mapbox_center": {
+                    "lon": 85.81049232824193,
+                    "lat": 25.125664126542148,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Sheohar": {
+                "mapbox_center": {
+                    "lon": 85.29139699382911,
+                    "lat": 26.494039653074054,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Sitamarhi": {
+                "mapbox_center": {
+                    "lon": 85.53122913517065,
+                    "lat": 26.57147398919657,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Siwan": {
+                "mapbox_center": {
+                    "lon": 84.39262931588672,
+                    "lat": 26.13120609945328,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Supaul": {
+                "mapbox_center": {
+                    "lon": 86.76243398908541,
+                    "lat": 26.276614815725328,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Vaishali": {
+                "mapbox_center": {
+                    "lon": 85.35570992231075,
+                    "lat": 25.75473642950305,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 85.81037949445235,
+            "lat": 25.90390673336631
+        },
+        "mapbox_zoom": 6
+    },
+    "CHANDIGARH": {
+        "districts": {
+            "Chandigarh": {}
+        },
+        "mapbox_center": {
+            "lon": 76.77728773590867,
+            "lat": 30.730840331824915
+        },
+        "mapbox_zoom": 10.5
+    },
+    "CHHATTISGARH": {
+        "districts": {
+            "Balod": {},
+            "Baloda Bazar": {},
+            "Balrampur": {},
+            "Bametara": {},
+            "Bastar": {},
+            "Bijapur": {},
+            "Bilaspur": {},
+            "Dakshin Bastar Dantewada": {},
+            "Dhamtari": {},
+            "Durg": {},
+            "Gariaband": {},
+            "Gaurela-Pendra-Marwahi": {},
+            "Janjgir - Champa": {},
+            "Jashpur": {},
+            "Kabeerdham": {},
+            "Kondagaon": {},
+            "Korba": {},
+            "Koriya": {},
+            "Mahasamund": {},
+            "Mungeli": {},
+            "Narayanpur": {},
+            "Raigarh": {},
+            "Raipur": {},
+            "Rajnandgaon": {},
+            "Sukma": {},
+            "Surajpur": {},
+            "Surguja": {},
+            "Uttar Bastar Kanker": {}
+        },
+        "mapbox_center": {
+            "lon": 82.32030588950005,
+            "lat": 20.94432551150004
+        },
+        "mapbox_zoom": 5
+    },
+    "DAMAN & DIU": {
+        "districts": {
+            "Daman": {
+                "mapbox_center": {
+                    "lon": 72.86271060844726,
+                    "lat": 20.416902581165846,
+                    "mapbox_zoom": 10
+                }
+            },
+            "Diu": {
+                "mapbox_center": {
+                    "lon": 70.94175367650159,
+                    "lat": 20.72110458023582,
+                    "mapbox_zoom": 10
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 71.89011867438012,
+            "lat": 20.56484639800806
+        },
+        "mapbox_zoom": 7
+    },
+    "DELHI": {
+        "districts": {
+            "Central": {
+                "mapbox_center": {
+                    "lon": 77.21843729606248,
+                    "lat": 28.700707647581414,
+                    "mapbox_zoom": 10
+                }
+            },
+            "East": {
+                "mapbox_center": {
+                    "lon": 77.29754184224078,
+                    "lat": 28.630028902532455,
+                    "mapbox_zoom": 10
+                }
+            },
+            "New Delhi": {
+                "mapbox_center": {
+                    "lon": 77.13164129851391,
+                    "lat": 28.56480321546684,
+                    "mapbox_zoom": 10
+                }
+            },
+            "North": {
+                "mapbox_center": {
+                    "lon": 77.0930824637635,
+                    "lat": 28.784167793280908,
+                    "mapbox_zoom": 10
+                }
+            },
+            "North East": {
+                "mapbox_center": {
+                    "lon": 77.25797324631375,
+                    "lat": 28.720974067322246,
+                    "mapbox_zoom": 10
+                }
+            },
+            "North West": {
+                "mapbox_center": {
+                    "lon": 77.0671976880655,
+                    "lat": 28.742742516578964,
+                    "mapbox_zoom": 10
+                }
+            },
+            "Shahdara": {
+                "mapbox_center": {
+                    "lon": 77.29996260924284,
+                    "lat": 28.67677607535478,
+                    "mapbox_zoom": 10
+                }
+            },
+            "South": {
+                "mapbox_center": {
+                    "lon": 77.19121675697804,
+                    "lat": 28.487298994917758,
+                    "mapbox_zoom": 10
+                }
+            },
+            "South East": {
+                "mapbox_center": {
+                    "lon": 77.27671271129994,
+                    "lat": 28.545926047335243,
+                    "mapbox_zoom": 10
+                }
+            },
+            "South West": {
+                "mapbox_center": {
+                    "lon": 76.97143649095585,
+                    "lat": 28.585276615498245,
+                    "mapbox_zoom": 10
+                }
+            },
+            "West": {
+                "mapbox_center": {
+                    "lon": 77.06614455577784,
+                    "lat": 28.64915883930187,
+                    "mapbox_zoom": 10
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 77.09325179754202,
+            "lat": 28.644249610845087
+        },
+        "mapbox_zoom": 8.5
+    },
+    "GOA": {
+        "districts": {
+            "North Goa": {
+                "mapbox_center": {
+                    "lon": 73.97910404111923,
+                    "lat": 15.603376160727429,
+                    "mapbox_zoom": 8
+                }
+            },
+            "South Goa": {
+                "mapbox_center": {
+                    "lon": 74.0597491059325,
+                    "lat": 15.220227368200922,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 74.00599581971676,
+            "lat": 15.350710066776884
+        },
+        "mapbox_zoom": 8
+    },
+    "GUJARAT": {
+        "districts": {
+            "Ahmadabad": {
+                "mapbox_center": {
+                    "lon": 72.33903671060077,
+                    "lat": 22.745082990039087,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Amreli": {
+                "mapbox_center": {
+                    "lon": 71.20681355406421,
+                    "lat": 21.400322817376235,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Anand": {
+                "mapbox_center": {
+                    "lon": 72.7806934285721,
+                    "lat": 22.47222713658394,
+                    "mapbox_zoom": 8.5
+                }
+            },
+            "Aravalli": {
+                "mapbox_center": {
+                    "lon": 73.31379952910405,
+                    "lat": 23.484301834075108,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Banas Kantha": {
+                "mapbox_center": {
+                    "lon": 72.14243137631438,
+                    "lat": 24.2695679430218,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bharuch": {
+                "mapbox_center": {
+                    "lon": 73.00393100334821,
+                    "lat": 21.827816984634566,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Bhavnagar": {
+                "mapbox_center": {
+                    "lon": 71.96133893009187,
+                    "lat": 21.5631934441524,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Botad": {
+                "mapbox_center": {
+                    "lon": 71.78017220667004,
+                    "lat": 22.046600852377725,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Chota Udaipur": {
+                "mapbox_center": {
+                    "lon": 73.88359351664383,
+                    "lat": 22.222566487829397,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Devbhumi Dwarka": {
+                "mapbox_center": {
+                    "lon": 69.43624564905984,
+                    "lat": 22.139376848386576,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Dohad": {
+                "mapbox_center": {
+                    "lon": 74.13689424681306,
+                    "lat": 22.919272737892427,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Gandhinagar": {
+                "mapbox_center": {
+                    "lon": 72.68253555098809,
+                    "lat": 23.28185595834346,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Gir Somnath": {
+                "mapbox_center": {
+                    "lon": 70.73142116300238,
+                    "lat": 20.990296269349876,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Jamnagar": {
+                "mapbox_center": {
+                    "lon": 70.19424972138084,
+                    "lat": 22.31741824542175,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Junagadh": {
+                "mapbox_center": {
+                    "lon": 70.44472578717402,
+                    "lat": 21.336656062891997,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kachchh": {
+                "mapbox_center": {
+                    "lon": 69.92811455862646,
+                    "lat": 23.731460844754572,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Kheda": {
+                "mapbox_center": {
+                    "lon": 72.96210016791395,
+                    "lat": 22.852797180784084,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Mahesana": {
+                "mapbox_center": {
+                    "lon": 72.40101335593785,
+                    "lat": 23.570423366542226,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Mahisagar": {
+                "mapbox_center": {
+                    "lon": 73.63093171771203,
+                    "lat": 23.191457102725757,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Morbi": {
+                "mapbox_center": {
+                    "lon": 70.89601504067316,
+                    "lat": 22.80991092619546,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Narmada": {
+                "mapbox_center": {
+                    "lon": 73.64302002354609,
+                    "lat": 21.739143198729728,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Navsari": {
+                "mapbox_center": {
+                    "lon": 73.10881488726466,
+                    "lat": 20.82951617539318,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Panch Mahals": {
+                "mapbox_center": {
+                    "lon": 73.63925835434497,
+                    "lat": 22.697713758530725,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Patan": {
+                "mapbox_center": {
+                    "lon": 71.75852728777195,
+                    "lat": 23.77352102077536,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Porbandar": {
+                "mapbox_center": {
+                    "lon": 69.75976447575732,
+                    "lat": 21.603808501383362,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Rajkot": {
+                "mapbox_center": {
+                    "lon": 70.76958265763129,
+                    "lat": 22.069996018765945,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Sabar Kantha": {
+                "mapbox_center": {
+                    "lon": 73.07215358724508,
+                    "lat": 23.868703613193297,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Surat": {
+                "mapbox_center": {
+                    "lon": 73.14836847908063,
+                    "lat": 21.19233670872533,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Surendranagar": {
+                "mapbox_center": {
+                    "lon": 71.58518304084367,
+                    "lat": 22.82535117824965,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Tapi": {
+                "mapbox_center": {
+                    "lon": 73.76488563803397,
+                    "lat": 21.188760915605748,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "The Dangs": {
+                "mapbox_center": {
+                    "lon": 73.70472806048599,
+                    "lat": 20.823482058503483,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Vadodara": {
+                "mapbox_center": {
+                    "lon": 73.21460114460453,
+                    "lat": 22.318262556964108,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Valsad": {
+                "mapbox_center": {
+                    "lon": 73.1152615795275,
+                    "lat": 20.43452911452895,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 71.28502304898697,
+            "lat": 22.41579081660557
+        },
+        "mapbox_zoom": 5.5
+    },
+    "HARYANA": {
+        "districts": {
+            "Ambala": {
+                "mapbox_center": {
+                    "lon": 76.87373074713243,
+                    "lat": 30.316452996124845,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Bhiwani": {
+                "mapbox_center": {
+                    "lon": 75.91927803410925,
+                    "lat": 28.732202988250975,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Charki Dadri": {
+                "mapbox_center": {
+                    "lon": 76.14978932702965,
+                    "lat": 28.60011174419685,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Faridabad": {
+                "mapbox_center": {
+                    "lon": 77.34982041231443,
+                    "lat": 28.354567523321663,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Fatehabad": {
+                "mapbox_center": {
+                    "lon": 75.59211400927882,
+                    "lat": 29.535453084030316,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Gurugram": {},
+            "Hisar": {
+                "mapbox_center": {
+                    "lon": 75.82303079767607,
+                    "lat": 29.23949144445561,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Jhajjar": {
+                "mapbox_center": {
+                    "lon": 76.62523127994234,
+                    "lat": 28.59742215720528,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Jind": {
+                "mapbox_center": {
+                    "lon": 76.34770947149848,
+                    "lat": 29.450115227430963,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kaithal": {
+                "mapbox_center": {
+                    "lon": 76.4495182353478,
+                    "lat": 29.8534565479357,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Karnal": {
+                "mapbox_center": {
+                    "lon": 76.86524220713585,
+                    "lat": 29.716974059575257,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kurukshetra": {
+                "mapbox_center": {
+                    "lon": 76.77148253598008,
+                    "lat": 30.060899259628968,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Mahendragarh": {
+                "mapbox_center": {
+                    "lon": 76.13154399743348,
+                    "lat": 28.13294870680688,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Nuh": {
+                "mapbox_center": {
+                    "lon": 77.09410659484053,
+                    "lat": 27.993587332250456,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Palwal": {
+                "mapbox_center": {
+                    "lon": 77.33499150779612,
+                    "lat": 28.05961789339936,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Panchkula": {
+                "mapbox_center": {
+                    "lon": 76.97651904923892,
+                    "lat": 30.67654528099704,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Panipat": {
+                "mapbox_center": {
+                    "lon": 76.89651859166821,
+                    "lat": 29.33798070267281,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Rewari": {
+                "mapbox_center": {
+                    "lon": 76.56955277381704,
+                    "lat": 28.218320490806548,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Rohtak": {
+                "mapbox_center": {
+                    "lon": 76.54054004274016,
+                    "lat": 28.89047212920088,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Sirsa": {
+                "mapbox_center": {
+                    "lon": 74.88873181365409,
+                    "lat": 29.6076088015112,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Sonipat": {
+                "mapbox_center": {
+                    "lon": 76.85443477852269,
+                    "lat": 29.041363683432024,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Yamunanagar": {
+                "mapbox_center": {
+                    "lon": 77.3347552814191,
+                    "lat": 30.212862891573078,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 76.03898859292548,
+            "lat": 29.290599162042746
+        },
+        "mapbox_zoom": 6
+    },
+    "HIMACHAL PRADESH": {
+        "districts": {
+            "Bilaspur": {
+                "mapbox_center": {
+                    "lon": 76.66014490039015,
+                    "lat": 31.40239933502182,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Chamba": {
+                "mapbox_center": {
+                    "lon": 76.34045746383794,
+                    "lat": 32.69290367375639,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hamirpur": {
+                "mapbox_center": {
+                    "lon": 76.51461284679782,
+                    "lat": 31.654366942534047,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kangra": {
+                "mapbox_center": {
+                    "lon": 76.33637669508161,
+                    "lat": 32.07621161663319,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Kinnaur": {
+                "mapbox_center": {
+                    "lon": 78.37839506428291,
+                    "lat": 31.59236224133197,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Kullu": {
+                "mapbox_center": {
+                    "lon": 77.40188532887755,
+                    "lat": 31.87755494968173,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Lahul & Spiti": {
+                "mapbox_center": {
+                    "lon": 77.52522302250296,
+                    "lat": 32.50295845716331,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mandi": {
+                "mapbox_center": {
+                    "lon": 77.00474178838022,
+                    "lat": 31.651574960604286,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Shimla": {
+                "mapbox_center": {
+                    "lon": 77.65009705490235,
+                    "lat": 31.239592349107703,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sirmaur": {
+                "mapbox_center": {
+                    "lon": 77.42393074861951,
+                    "lat": 30.699318522402383,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Solan": {
+                "mapbox_center": {
+                    "lon": 76.92479358491127,
+                    "lat": 31.056620345892384,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Una": {
+                "mapbox_center": {
+                    "lon": 76.20800629428146,
+                    "lat": 31.583059868252374,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 77.301577980448,
+            "lat": 31.817324728174313
+        },
+        "mapbox_zoom": 6
+    },
+    "JAMMU & KASHMIR": {
+        "districts": {
+            "Anantnag": {
+                "mapbox_center": {
+                    "lon": 75.31169141861164,
+                    "lat": 33.810329499025926,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Badgam": {
+                "mapbox_center": {
+                    "lon": 74.65719017780646,
+                    "lat": 33.909850271921286,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Bandipore": {
+                "mapbox_center": {
+                    "lon": 74.90439282402681,
+                    "lat": 34.45607631679764,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Baramula": {
+                "mapbox_center": {
+                    "lon": 74.30096046486568,
+                    "lat": 34.17625880603613,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Doda": {
+                "mapbox_center": {
+                    "lon": 75.77965785313964,
+                    "lat": 33.13375688989056,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Ganderbal": {
+                "mapbox_center": {
+                    "lon": 75.07074752407112,
+                    "lat": 34.28818024279498,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Jammu": {
+                "mapbox_center": {
+                    "lon": 74.73599383058539,
+                    "lat": 32.76817529922282,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kathua": {
+                "mapbox_center": {
+                    "lon": 75.56431905371488,
+                    "lat": 32.583275537275185,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kishtwar": {
+                "mapbox_center": {
+                    "lon": 76.0846529538004,
+                    "lat": 33.63194956055555,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kulgam": {
+                "mapbox_center": {
+                    "lon": 74.84492723536101,
+                    "lat": 33.625063427379104,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kupwara": {
+                "mapbox_center": {
+                    "lon": 74.17867231969909,
+                    "lat": 34.51478951612669,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Mirpur": {
+                "mapbox_center": {
+                    "lon": 74.00355609017731,
+                    "lat": 33.23669143561605,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Muzaffarabad": {
+                "mapbox_center": {
+                    "lon": 73.98915374393431,
+                    "lat": 34.58955936194727,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Pulwama": {
+                "mapbox_center": {
+                    "lon": 74.97366115201729,
+                    "lat": 33.94959634910951,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Punch": {
+                "mapbox_center": {
+                    "lon": 74.03162706029885,
+                    "lat": 33.782841869591444,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Rajouri": {
+                "mapbox_center": {
+                    "lon": 74.34470183500045,
+                    "lat": 33.26642981899309,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Ramban": {
+                "mapbox_center": {
+                    "lon": 75.19530194712134,
+                    "lat": 33.33152019492894,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Reasi": {
+                "mapbox_center": {
+                    "lon": 74.80602945233,
+                    "lat": 33.20635188097684,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Samba": {
+                "mapbox_center": {
+                    "lon": 75.1102059187215,
+                    "lat": 32.57627961982815,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Shupiyan": {
+                "mapbox_center": {
+                    "lon": 74.80815868997124,
+                    "lat": 33.721455670242975,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Srinagar": {
+                "mapbox_center": {
+                    "lon": 74.91692917943104,
+                    "lat": 34.109621668634595,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Udhampur": {
+                "mapbox_center": {
+                    "lon": 75.33580491644452,
+                    "lat": 32.91244097312054,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 75.08489888641364,
+            "lat": 33.69714475179461
+        },
+        "mapbox_zoom": 6
+    },
+    "JHARKHAND": {
+        "districts": {
+            "Bokaro": {
+                "mapbox_center": {
+                    "lon": 86.03529693497944,
+                    "lat": 23.699059053511156,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chatra": {
+                "mapbox_center": {
+                    "lon": 84.91392318443096,
+                    "lat": 24.105640472986487,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Deoghar": {
+                "mapbox_center": {
+                    "lon": 86.76091209342465,
+                    "lat": 24.330027831978512,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Dhanbad": {
+                "mapbox_center": {
+                    "lon": 86.46905901973122,
+                    "lat": 23.844802392179652,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Dumka": {
+                "mapbox_center": {
+                    "lon": 87.29484576960698,
+                    "lat": 24.317076041942244,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Garhwa": {
+                "mapbox_center": {
+                    "lon": 83.69899285654111,
+                    "lat": 24.05301963217223,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Giridih": {
+                "mapbox_center": {
+                    "lon": 86.1225308589832,
+                    "lat": 24.331909393034707,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Godda": {
+                "mapbox_center": {
+                    "lon": 87.28366214092587,
+                    "lat": 24.8645282344373,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gumla": {
+                "mapbox_center": {
+                    "lon": 84.5237663530396,
+                    "lat": 23.159056027891317,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hazaribagh": {
+                "mapbox_center": {
+                    "lon": 85.47600603626682,
+                    "lat": 24.088260285050207,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jamtara": {
+                "mapbox_center": {
+                    "lon": 86.88074769323681,
+                    "lat": 23.98108750131002,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Khunti": {
+                "mapbox_center": {
+                    "lon": 85.29680053498541,
+                    "lat": 22.929309509134175,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kodarma": {
+                "mapbox_center": {
+                    "lon": 85.6149448599156,
+                    "lat": 24.542189116810825,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Latehar": {
+                "mapbox_center": {
+                    "lon": 84.46439576480836,
+                    "lat": 23.68712857384191,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Lohardaga": {
+                "mapbox_center": {
+                    "lon": 84.66557628351546,
+                    "lat": 23.477264097445318,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Pakur": {
+                "mapbox_center": {
+                    "lon": 87.65209306086393,
+                    "lat": 24.532978307418148,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Palamu": {
+                "mapbox_center": {
+                    "lon": 84.2004391810097,
+                    "lat": 24.217845946086648,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Pashchimi Singhbhum": {
+                "mapbox_center": {
+                    "lon": 85.51659802889812,
+                    "lat": 22.42846478730107,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Purbi Singhbhum": {
+                "mapbox_center": {
+                    "lon": 86.47834266262822,
+                    "lat": 22.613931262387325,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ramgarh": {
+                "mapbox_center": {
+                    "lon": 85.54464906540346,
+                    "lat": 23.692608211338687,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ranchi": {
+                "mapbox_center": {
+                    "lon": 85.38414600908621,
+                    "lat": 23.30041980085989,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sahibganj": {
+                "mapbox_center": {
+                    "lon": 87.70755318025545,
+                    "lat": 25.03239231581613,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Saraikela-kharsawan": {
+                "mapbox_center": {
+                    "lon": 85.87996448486868,
+                    "lat": 22.823046490275992,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Simdega": {
+                "mapbox_center": {
+                    "lon": 84.54123047487622,
+                    "lat": 22.589564759193117,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 85.64596669917654,
+            "lat": 23.659898869964586
+        },
+        "mapbox_zoom": 6
+    },
+    "KARNATAKA": {
+        "districts": {
+            "Bagalkote": {
+                "mapbox_center": {
+                    "lon": 75.65933213161013,
+                    "lat": 16.290449610371546,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ballari": {
+                "mapbox_center": {
+                    "lon": 76.41638288749708,
+                    "lat": 15.19897676392664,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bangalore": {
+                "mapbox_center": {
+                    "lon": 77.58080619312213,
+                    "lat": 12.945289715581549,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Belagavi": {
+                "mapbox_center": {
+                    "lon": 74.77300776426975,
+                    "lat": 16.157725932843263,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bengaluru Rural": {
+                "mapbox_center": {
+                    "lon": 77.57381226695114,
+                    "lat": 13.182637543968347,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bidar": {
+                "mapbox_center": {
+                    "lon": 77.17331277641003,
+                    "lat": 18.020960005006835,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chamarajanagara": {
+                "mapbox_center": {
+                    "lon": 77.09002597250958,
+                    "lat": 11.954389752041157,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chikkaballapura": {
+                "mapbox_center": {
+                    "lon": 77.78513335486096,
+                    "lat": 13.589886844320759,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chikkamagaluru": {
+                "mapbox_center": {
+                    "lon": 75.72121327704934,
+                    "lat": 13.40614881183296,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chitradurga": {
+                "mapbox_center": {
+                    "lon": 76.52441771333304,
+                    "lat": 14.30602364432309,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Dakshina Kannada": {
+                "mapbox_center": {
+                    "lon": 75.22350396302733,
+                    "lat": 12.822683257724833,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Davanagere": {
+                "mapbox_center": {
+                    "lon": 75.9662398811564,
+                    "lat": 14.369111879278222,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Dharwad": {
+                "mapbox_center": {
+                    "lon": 75.14080158598273,
+                    "lat": 15.370646247371031,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gadag": {
+                "mapbox_center": {
+                    "lon": 75.65938998625853,
+                    "lat": 15.415519901902556,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hassan": {
+                "mapbox_center": {
+                    "lon": 76.09413746807977,
+                    "lat": 13.030243418229471,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Haveri": {
+                "mapbox_center": {
+                    "lon": 75.41772635297836,
+                    "lat": 14.718044080341965,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kalaburagi": {
+                "mapbox_center": {
+                    "lon": 76.8788033547771,
+                    "lat": 17.240694103112467,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kodagu": {
+                "mapbox_center": {
+                    "lon": 75.7774485756066,
+                    "lat": 12.382882412717416,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kolar": {
+                "mapbox_center": {
+                    "lon": 78.21360281883449,
+                    "lat": 13.1800107614586,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Koppal": {
+                "mapbox_center": {
+                    "lon": 76.29311355701225,
+                    "lat": 15.574762434170157,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mandya": {
+                "mapbox_center": {
+                    "lon": 76.83167567513524,
+                    "lat": 12.636681419230257,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mysuru": {
+                "mapbox_center": {
+                    "lon": 76.52147417444634,
+                    "lat": 12.197003985452845,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Raichur": {
+                "mapbox_center": {
+                    "lon": 76.91602429354062,
+                    "lat": 16.054759991748355,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ramanagara": {
+                "mapbox_center": {
+                    "lon": 77.3514215775617,
+                    "lat": 12.720156959960349,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Shivamogga": {
+                "mapbox_center": {
+                    "lon": 75.25201705293982,
+                    "lat": 14.056053435283133,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Tumakuru": {
+                "mapbox_center": {
+                    "lon": 76.93165652234077,
+                    "lat": 13.543897531626012,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Udupi": {
+                "mapbox_center": {
+                    "lon": 74.89417655199847,
+                    "lat": 13.52688870496433,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Uttara Kannada": {
+                "mapbox_center": {
+                    "lon": 74.59432696220844,
+                    "lat": 14.725320179968454,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Vijayapura": {
+                "mapbox_center": {
+                    "lon": 75.90242605080756,
+                    "lat": 16.670105612792554,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Yadgir": {
+                "mapbox_center": {
+                    "lon": 76.88396765840358,
+                    "lat": 16.573888687555225,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 76.33668383985705,
+            "lat": 15.02671157114138
+        },
+        "mapbox_zoom": 5
+    },
+    "KERALA": {
+        "districts": {
+            "Alappuzha": {
+                "mapbox_center": {
+                    "lon": 76.4850022810603,
+                    "lat": 9.489303104748668,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ernakulam": {
+                "mapbox_center": {
+                    "lon": 76.62770660342827,
+                    "lat": 10.026918011982072,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Idukki": {
+                "mapbox_center": {
+                    "lon": 77.01993058450164,
+                    "lat": 9.815955711143214,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kannur": {
+                "mapbox_center": {
+                    "lon": 75.55242111661005,
+                    "lat": 11.985305039624524,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kasaragod": {
+                "mapbox_center": {
+                    "lon": 75.14992514280787,
+                    "lat": 12.442555403592095,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kollam": {
+                "mapbox_center": {
+                    "lon": 76.87027943642967,
+                    "lat": 8.967234786773837,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kottayam": {
+                "mapbox_center": {
+                    "lon": 76.67484654821783,
+                    "lat": 9.6287483434435,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kozhikode": {
+                "mapbox_center": {
+                    "lon": 75.84130782792029,
+                    "lat": 11.463732918564698,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Malappuram": {
+                "mapbox_center": {
+                    "lon": 76.18804644732057,
+                    "lat": 11.106547300686026,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Palakkad": {
+                "mapbox_center": {
+                    "lon": 76.46740984566517,
+                    "lat": 10.786982686675888,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Pathanamthitta": {
+                "mapbox_center": {
+                    "lon": 76.87844328261264,
+                    "lat": 9.277628564275124,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Thiruvananthapuram": {
+                "mapbox_center": {
+                    "lon": 76.97862783493608,
+                    "lat": 8.577259006313339,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Thrissur": {
+                "mapbox_center": {
+                    "lon": 76.42893565242659,
+                    "lat": 10.47793823803621,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Wayanad": {
+                "mapbox_center": {
+                    "lon": 76.10826894666263,
+                    "lat": 11.714828570512635,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 76.13998834436055,
+            "lat": 10.544048997177274
+        },
+        "mapbox_zoom": 5.5
+    },
+    "LADAKH": {
+        "districts": {
+            "Kargil": {
+                "mapbox_center": {
+                    "lon": 76.46007919139983,
+                    "lat": 33.798877087098845,
+                    "mapbox_zoom": 6
+                }
+            },
+            "Leh": {
+                "mapbox_center": {
+                    "lon": 76.42788585872768,
+                    "lat": 34.707621063144096,
+                    "mapbox_zoom": 5
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 76.42788585872768,
+            "lat": 34.70762106350245
+        },
+        "mapbox_zoom": 5
+    },
+    "LAKSHADWEEP": {
+        "districts": {
+            "Lakshadweep": {}
+        },
+        "mapbox_center": {
+            "lon": 72.93328975091376,
+            "lat": 9.983975537988918
+        },
+        "mapbox_zoom": 6
+    },
+    "MADHYA PRADESH": {
+        "districts": {
+            "Agar Malwa": {
+                "mapbox_center": {
+                    "lon": 76.06219401572781,
+                    "lat": 23.93528501901274,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Alirajpur": {
+                "mapbox_center": {
+                    "lon": 74.38869799834163,
+                    "lat": 22.285831606984956,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Anuppur": {
+                "mapbox_center": {
+                    "lon": 81.66176033522866,
+                    "lat": 23.035750472713787,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ashoknagar": {
+                "mapbox_center": {
+                    "lon": 77.87486406579771,
+                    "lat": 24.618545077515332,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Balaghat": {
+                "mapbox_center": {
+                    "lon": 80.27743899489684,
+                    "lat": 21.861125769316004,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Barwani": {
+                "mapbox_center": {
+                    "lon": 75.03004012218032,
+                    "lat": 21.75136307665425,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Betul": {
+                "mapbox_center": {
+                    "lon": 77.77405710180578,
+                    "lat": 21.879703513778313,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bhind": {
+                "mapbox_center": {
+                    "lon": 78.67465079196354,
+                    "lat": 26.351353362668824,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bhopal": {
+                "mapbox_center": {
+                    "lon": 77.40710385077213,
+                    "lat": 23.48390389997123,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Burhanpur": {
+                "mapbox_center": {
+                    "lon": 76.37180844222574,
+                    "lat": 21.3344463155437,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chhatarpur": {
+                "mapbox_center": {
+                    "lon": 79.70875362633402,
+                    "lat": 24.760377297855538,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chhindwara": {
+                "mapbox_center": {
+                    "lon": 78.82575400470854,
+                    "lat": 22.139513001975224,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Damoh": {
+                "mapbox_center": {
+                    "lon": 79.50523187027358,
+                    "lat": 23.798185050810368,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Datia": {
+                "mapbox_center": {
+                    "lon": 78.55470887878327,
+                    "lat": 25.671688825054964,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Dewas": {
+                "mapbox_center": {
+                    "lon": 76.51486107152289,
+                    "lat": 22.805703031265665,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Dhar": {
+                "mapbox_center": {
+                    "lon": 75.09243696661883,
+                    "lat": 22.578676667182126,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Dindori": {
+                "mapbox_center": {
+                    "lon": 81.10943946480552,
+                    "lat": 22.907148884084613,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Guna": {
+                "mapbox_center": {
+                    "lon": 77.26783943634189,
+                    "lat": 24.500136825498775,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gwalior": {
+                "mapbox_center": {
+                    "lon": 78.15980074376819,
+                    "lat": 26.02850860575338,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Harda": {
+                "mapbox_center": {
+                    "lon": 77.14520868585316,
+                    "lat": 22.242746647847532,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hoshangabad": {
+                "mapbox_center": {
+                    "lon": 77.95581559760748,
+                    "lat": 22.600258375984772,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Indore": {
+                "mapbox_center": {
+                    "lon": 75.83518830522803,
+                    "lat": 22.710636418382734,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jabalpur": {
+                "mapbox_center": {
+                    "lon": 79.96570861818822,
+                    "lat": 23.223292159262115,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jhabua": {
+                "mapbox_center": {
+                    "lon": 74.66743950289651,
+                    "lat": 22.886917916960712,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Katni": {
+                "mapbox_center": {
+                    "lon": 80.3827678920778,
+                    "lat": 23.717665102438943,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Khandwa": {},
+            "Khargone": {},
+            "Mandla": {
+                "mapbox_center": {
+                    "lon": 80.57270344199209,
+                    "lat": 22.68727437381397,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mandsaur": {
+                "mapbox_center": {
+                    "lon": 75.40150592619477,
+                    "lat": 24.263170199209767,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Morena": {
+                "mapbox_center": {
+                    "lon": 77.82998961915408,
+                    "lat": 26.38460556975783,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Narsimhapur": {
+                "mapbox_center": {
+                    "lon": 79.04317011690533,
+                    "lat": 22.93445026348462,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Neemuch": {
+                "mapbox_center": {
+                    "lon": 75.15862453671544,
+                    "lat": 24.629422370183768,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Niwari": {
+                "mapbox_center": {
+                    "lon": 78.71217974596998,
+                    "lat": 25.31243139362676,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Panna": {
+                "mapbox_center": {
+                    "lon": 80.2066815319057,
+                    "lat": 24.473779456074542,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Raisen": {
+                "mapbox_center": {
+                    "lon": 78.07782335701438,
+                    "lat": 23.26758732784016,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Rajgarh": {
+                "mapbox_center": {
+                    "lon": 76.70794940580137,
+                    "lat": 23.87058626874309,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ratlam": {
+                "mapbox_center": {
+                    "lon": 75.10229024695799,
+                    "lat": 23.50278702291464,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Rewa": {
+                "mapbox_center": {
+                    "lon": 81.6727407753231,
+                    "lat": 24.756094451566675,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sagar": {
+                "mapbox_center": {
+                    "lon": 78.70603102803099,
+                    "lat": 23.808301499884013,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Satna": {
+                "mapbox_center": {
+                    "lon": 80.86347331768357,
+                    "lat": 24.577572140761887,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sehore": {
+                "mapbox_center": {
+                    "lon": 77.23247306049929,
+                    "lat": 23.114958507142845,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Seoni": {
+                "mapbox_center": {
+                    "lon": 79.74216173369686,
+                    "lat": 22.274919444255744,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Shahdol": {
+                "mapbox_center": {
+                    "lon": 81.49221597991851,
+                    "lat": 23.653260247056075,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Shajapur": {
+                "mapbox_center": {
+                    "lon": 76.58517935850227,
+                    "lat": 23.370559550434685,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sheopur": {
+                "mapbox_center": {
+                    "lon": 77.07086965464642,
+                    "lat": 25.74994894189703,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Shivpuri": {
+                "mapbox_center": {
+                    "lon": 77.73975530952492,
+                    "lat": 25.37411179837138,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sidhi": {
+                "mapbox_center": {
+                    "lon": 81.84247872072109,
+                    "lat": 24.211447036539816,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Singrauli": {
+                "mapbox_center": {
+                    "lon": 82.3440976650055,
+                    "lat": 24.243190180536573,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Tikamgarh": {
+                "mapbox_center": {
+                    "lon": 78.98886028439608,
+                    "lat": 24.855316956263522,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ujjain": {
+                "mapbox_center": {
+                    "lon": 75.69468093910069,
+                    "lat": 23.293514732182054,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Umaria": {
+                "mapbox_center": {
+                    "lon": 80.94070962768402,
+                    "lat": 23.643085666285387,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Vidisha": {
+                "mapbox_center": {
+                    "lon": 77.77939845034916,
+                    "lat": 23.84627622834192,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 78.42001148892685,
+            "lat": 23.969570225381066
+        },
+        "mapbox_zoom": 5
+    },
+    "MAHARASHTRA": {
+        "districts": {
+            "Ahmadnagar": {
+                "mapbox_center": {
+                    "lon": 74.59908587456263,
+                    "lat": 19.16220428762745,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Akola": {
+                "mapbox_center": {
+                    "lon": 77.15542547531112,
+                    "lat": 20.761064391311557,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Amravati": {
+                "mapbox_center": {
+                    "lon": 77.53532390638222,
+                    "lat": 21.154286746103352,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Aurangabad": {
+                "mapbox_center": {
+                    "lon": 75.31577590818989,
+                    "lat": 20.023044342068015,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bhandara": {
+                "mapbox_center": {
+                    "lon": 79.77520221002126,
+                    "lat": 21.12272230840766,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bid": {
+                "mapbox_center": {
+                    "lon": 75.77097692365359,
+                    "lat": 18.99227896580494,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Buldana": {
+                "mapbox_center": {
+                    "lon": 76.37417667305505,
+                    "lat": 20.563455503393747,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chandrapur": {
+                "mapbox_center": {
+                    "lon": 79.39441569637543,
+                    "lat": 20.096790937807217,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Dhule": {
+                "mapbox_center": {
+                    "lon": 74.5278237524179,
+                    "lat": 21.130886363640602,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gadchiroli": {
+                "mapbox_center": {
+                    "lon": 80.31760756392403,
+                    "lat": 19.757456378302734,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gondiya": {
+                "mapbox_center": {
+                    "lon": 80.23886929547223,
+                    "lat": 21.145726762206618,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hingoli": {
+                "mapbox_center": {
+                    "lon": 77.00039092226908,
+                    "lat": 19.542333904298076,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jalgaon": {
+                "mapbox_center": {
+                    "lon": 75.57889019295061,
+                    "lat": 20.842322045177124,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jalna": {
+                "mapbox_center": {
+                    "lon": 76.05962273734735,
+                    "lat": 19.917656457599964,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kolhapur": {
+                "mapbox_center": {
+                    "lon": 74.19306453743727,
+                    "lat": 16.461883314504508,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Latur": {
+                "mapbox_center": {
+                    "lon": 76.74970645945723,
+                    "lat": 18.354214972165252,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mumbai": {
+                "mapbox_center": {
+                    "lon": 72.85325135614116,
+                    "lat": 18.95554426300285,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Mumbai Suburban": {
+                "mapbox_center": {
+                    "lon": 72.87815331428205,
+                    "lat": 19.12380756813466,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Nagpur": {
+                "mapbox_center": {
+                    "lon": 78.95221718289666,
+                    "lat": 21.152696839608225,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Nanded": {
+                "mapbox_center": {
+                    "lon": 77.64713970172318,
+                    "lat": 19.09354919285162,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Nandurbar": {
+                "mapbox_center": {
+                    "lon": 74.17594509648026,
+                    "lat": 21.51677281512322,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Nashik": {
+                "mapbox_center": {
+                    "lon": 74.09196629067203,
+                    "lat": 20.224205258376056,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Osmanabad": {
+                "mapbox_center": {
+                    "lon": 76.0377662454369,
+                    "lat": 18.169444088667944,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Palghar": {
+                "mapbox_center": {
+                    "lon": 73.07934858197864,
+                    "lat": 19.75743493710361,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Parbhani": {
+                "mapbox_center": {
+                    "lon": 76.66378401423367,
+                    "lat": 19.290090481351854,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Pune": {
+                "mapbox_center": {
+                    "lon": 74.24356541253059,
+                    "lat": 18.645052125219358,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Raigarh": {
+                "mapbox_center": {
+                    "lon": 73.24933605420972,
+                    "lat": 18.493610896479694,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ratnagiri": {
+                "mapbox_center": {
+                    "lon": 73.44610170139254,
+                    "lat": 17.282383095566985,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sangli": {
+                "mapbox_center": {
+                    "lon": 74.68456691729997,
+                    "lat": 17.172031703447985,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Satara": {
+                "mapbox_center": {
+                    "lon": 74.21988262049464,
+                    "lat": 17.636334428244105,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sindhudurg": {
+                "mapbox_center": {
+                    "lon": 73.75976588276075,
+                    "lat": 16.1355801163565,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Solapur": {
+                "mapbox_center": {
+                    "lon": 75.51797673743911,
+                    "lat": 17.849733198049428,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Thane": {
+                "mapbox_center": {
+                    "lon": 73.28816270773821,
+                    "lat": 19.35954182725391,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Wardha": {
+                "mapbox_center": {
+                    "lon": 78.63751498429374,
+                    "lat": 20.82628747773966,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Washim": {
+                "mapbox_center": {
+                    "lon": 77.14819053878506,
+                    "lat": 20.28706214506292,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Yavatmal": {
+                "mapbox_center": {
+                    "lon": 78.21614245495738,
+                    "lat": 20.063758041221334,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 76.77648264643727,
+            "lat": 18.820028081431783
+        },
+        "mapbox_zoom": 5
+    },
+    "MANIPUR": {
+        "districts": {
+            "Bishnupur": {
+                "mapbox_center": {
+                    "lon": 93.79184149960992,
+                    "lat": 24.50292511067271,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Chandel": {
+                "mapbox_center": {
+                    "lon": 94.07387831433361,
+                    "lat": 24.232932221506292,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Churachandpur": {
+                "mapbox_center": {
+                    "lon": 93.4248996136121,
+                    "lat": 24.281678504292678,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Imphal East": {
+                "mapbox_center": {
+                    "lon": 93.60311992174164,
+                    "lat": 24.796888961510312,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Imphal West": {
+                "mapbox_center": {
+                    "lon": 93.85796039170643,
+                    "lat": 24.757325277202213,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jiribam": {},
+            "Kakching": {
+                "mapbox_center": {
+                    "lon": 93.94527281544046,
+                    "lat": 24.388703972475167,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kamjong": {},
+            "Kangpokpi": {},
+            "Noney": {},
+            "Pherzawl": {},
+            "Senapati": {
+                "mapbox_center": {
+                    "lon": 94.09984942127454,
+                    "lat": 25.11546285631467,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Tamenglong": {
+                "mapbox_center": {
+                    "lon": 93.56348517252964,
+                    "lat": 24.97925292466381,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Tengnoupal": {},
+            "Thoubal": {
+                "mapbox_center": {
+                    "lon": 94.01601577558054,
+                    "lat": 24.622483256049847,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Ukhrul": {
+                "mapbox_center": {
+                    "lon": 94.43101154739728,
+                    "lat": 25.086660227605286,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 93.8575860596851,
+            "lat": 24.762341884374862
+        },
+        "mapbox_zoom": 7
+    },
+    "MEGHALAYA": {
+        "districts": {
+            "East Garo Hills": {
+                "mapbox_center": {
+                    "lon": 90.64977000199995,
+                    "lat": 25.63296200649013,
+                    "mapbox_zoom": 8
+                }
+            },
+            "East Jaintia Hills": {
+                "mapbox_center": {
+                    "lon": 92.48934182622153,
+                    "lat": 25.245509283148248,
+                    "mapbox_zoom": 8
+                }
+            },
+            "East Khasi Hills": {
+                "mapbox_center": {
+                    "lon": 91.74594971123531,
+                    "lat": 25.39912253327319,
+                    "mapbox_zoom": 8
+                }
+            },
+            "North Garo Hills": {
+                "mapbox_center": {
+                    "lon": 90.68473321124807,
+                    "lat": 25.86534702053191,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Ribhoi": {
+                "mapbox_center": {
+                    "lon": 91.80831826503056,
+                    "lat": 25.880042209906946,
+                    "mapbox_zoom": 8
+                }
+            },
+            "South Garo Hills": {
+                "mapbox_center": {
+                    "lon": 90.59967385387478,
+                    "lat": 25.34860886225622,
+                    "mapbox_zoom": 8
+                }
+            },
+            "South West Garo Hills": {
+                "mapbox_center": {
+                    "lon": 89.97302329876626,
+                    "lat": 25.444881636163522,
+                    "mapbox_zoom": 8
+                }
+            },
+            "South West Khasi Hills": {
+                "mapbox_center": {
+                    "lon": 91.21774657554911,
+                    "lat": 25.320804212601693,
+                    "mapbox_zoom": 8
+                }
+            },
+            "West Garo Hills": {
+                "mapbox_center": {
+                    "lon": 90.16386526676855,
+                    "lat": 25.60759314060431,
+                    "mapbox_zoom": 8
+                }
+            },
+            "West Jaintia Hills": {
+                "mapbox_center": {
+                    "lon": 92.32122786821975,
+                    "lat": 25.438973270355543,
+                    "mapbox_zoom": 8
+                }
+            },
+            "West Khasi Hills": {
+                "mapbox_center": {
+                    "lon": 91.28756493749648,
+                    "lat": 25.575863939594782,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 91.30842112210038,
+            "lat": 25.57432776697629
+        },
+        "mapbox_zoom": 6
+    },
+    "MIZORAM": {
+        "districts": {
+            "Aizawl": {
+                "mapbox_center": {
+                    "lon": 92.91820670926936,
+                    "lat": 23.84331938133939,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Champhai": {
+                "mapbox_center": {
+                    "lon": 93.16937775668208,
+                    "lat": 23.544411622416032,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hnahthial": {},
+            "Khawzawl": {},
+            "Kolasib": {
+                "mapbox_center": {
+                    "lon": 92.7127676739573,
+                    "lat": 24.072588383980925,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Lawngtlai": {
+                "mapbox_center": {
+                    "lon": 92.82283633320719,
+                    "lat": 22.390877638054718,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Lunglei": {
+                "mapbox_center": {
+                    "lon": 92.75525939545452,
+                    "lat": 22.951788974465032,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mamit": {
+                "mapbox_center": {
+                    "lon": 92.46454303869271,
+                    "lat": 23.758661183168904,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Saiha": {
+                "mapbox_center": {
+                    "lon": 93.01175300853637,
+                    "lat": 22.269688565111146,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Saitual": {},
+            "Serchhip": {
+                "mapbox_center": {
+                    "lon": 92.86216866996872,
+                    "lat": 23.346468623072518,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 92.84658941400008,
+            "lat": 23.231213167500044
+        },
+        "mapbox_zoom": 6
+    },
+    "NAGALAND": {
+        "districts": {
+            "Dimapur": {
+                "mapbox_center": {
+                    "lon": 93.76494250978647,
+                    "lat": 25.820965586749143,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kiphire": {
+                "mapbox_center": {
+                    "lon": 94.80981948524806,
+                    "lat": 25.804358854287422,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kohima": {
+                "mapbox_center": {
+                    "lon": 94.10524762958215,
+                    "lat": 25.769914819380435,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Longleng": {
+                "mapbox_center": {
+                    "lon": 94.79236832205862,
+                    "lat": 26.587748555385268,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Mokokchung": {
+                "mapbox_center": {
+                    "lon": 94.5234153347008,
+                    "lat": 26.48073371808134,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Mon": {
+                "mapbox_center": {
+                    "lon": 95.010994570046,
+                    "lat": 26.66481046174856,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Peren": {
+                "mapbox_center": {
+                    "lon": 93.63330829509883,
+                    "lat": 25.43679164988061,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Phek": {
+                "mapbox_center": {
+                    "lon": 94.54208813301481,
+                    "lat": 25.649797029927925,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Tuensang": {
+                "mapbox_center": {
+                    "lon": 94.87245507943118,
+                    "lat": 26.17111205688232,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Wokha": {
+                "mapbox_center": {
+                    "lon": 94.17174961092653,
+                    "lat": 26.267171538368174,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Zunheboto": {
+                "mapbox_center": {
+                    "lon": 94.4636699015102,
+                    "lat": 26.012712311828345,
+                    "mapbox_zoom": 8
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 94.2845397702286,
+            "lat": 26.117305547880434
+        },
+        "mapbox_zoom": 7
+    },
+    "PUDUCHERRY": {
+        "districts": {
+            "Karaikal": {
+                "mapbox_center": {
+                    "lon": 79.78653256637676,
+                    "lat": 10.91564198644605,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Mahe": {
+                "mapbox_center": {
+                    "lon": 75.54120658498486,
+                    "lat": 11.72836961629023,
+                    "mapbox_zoom": 10
+                }
+            },
+            "Puducherry": {
+                "mapbox_center": {
+                    "lon": 79.73656028470032,
+                    "lat": 11.91354747741498,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Yanam": {
+                "mapbox_center": {
+                    "lon": 82.24981819314294,
+                    "lat": 16.72769113269034,
+                    "mapbox_zoom": 9
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 78.92021112874917,
+            "lat": 13.794099774034748
+        },
+        "mapbox_zoom": 5
+    },
+    "PUNJAB": {
+        "districts": {
+            "Amritsar": {
+                "mapbox_center": {
+                    "lon": 74.94539041274626,
+                    "lat": 31.77321677495931,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Barnala": {
+                "mapbox_center": {
+                    "lon": 75.49236296864011,
+                    "lat": 30.371823714845064,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bathinda": {
+                "mapbox_center": {
+                    "lon": 75.00306341146599,
+                    "lat": 30.178948710099625,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Faridkot": {
+                "mapbox_center": {
+                    "lon": 74.76145970929,
+                    "lat": 30.6014696121577,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Fatehgarh Sahib": {
+                "mapbox_center": {
+                    "lon": 76.35452946721162,
+                    "lat": 30.66082073321097,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Fazilka": {
+                "mapbox_center": {
+                    "lon": 74.17127692250375,
+                    "lat": 30.31934540377717,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Firozpur": {
+                "mapbox_center": {
+                    "lon": 74.68324046764639,
+                    "lat": 30.88530717300636,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gurdaspur": {
+                "mapbox_center": {
+                    "lon": 75.24456887747574,
+                    "lat": 31.903774318748113,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hoshiarpur": {
+                "mapbox_center": {
+                    "lon": 75.91033427239326,
+                    "lat": 31.609509650859085,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jalandhar": {
+                "mapbox_center": {
+                    "lon": 75.51662813128819,
+                    "lat": 31.29215147544152,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kapurthala": {
+                "mapbox_center": {
+                    "lon": 75.43517645211335,
+                    "lat": 31.38569670445033,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ludhiana": {
+                "mapbox_center": {
+                    "lon": 75.83974032658917,
+                    "lat": 30.789405509676968,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mansa": {
+                "mapbox_center": {
+                    "lon": 75.47163058131466,
+                    "lat": 29.87594692279368,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Moga": {
+                "mapbox_center": {
+                    "lon": 75.16183308894159,
+                    "lat": 30.78815006242516,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Pathankot": {
+                "mapbox_center": {
+                    "lon": 75.62874005177096,
+                    "lat": 32.30291646551973,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Patiala": {
+                "mapbox_center": {
+                    "lon": 76.38547407246855,
+                    "lat": 30.209422446877532,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Rupnagar": {
+                "mapbox_center": {
+                    "lon": 76.51258382790462,
+                    "lat": 31.09142182542951,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sahibzada Ajit Singh Nag*": {},
+            "Sangrur": {
+                "mapbox_center": {
+                    "lon": 75.87966449636687,
+                    "lat": 30.209747848173244,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Shahid Bhagat Singh Nagar": {
+                "mapbox_center": {
+                    "lon": 76.15322764135604,
+                    "lat": 31.126860217939367,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sri Muktsar Sahib": {
+                "mapbox_center": {
+                    "lon": 74.53285296963773,
+                    "lat": 30.286593452090283,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Tarn Taran": {
+                "mapbox_center": {
+                    "lon": 74.9001516493984,
+                    "lat": 31.321514346336116,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 75.4096331242582,
+            "lat": 31.027415897975676
+        },
+        "mapbox_zoom": 6
+    },
+    "RAJASTHAN": {
+        "districts": {
+            "Ajmer": {
+                "mapbox_center": {
+                    "lon": 74.63007509150404,
+                    "lat": 26.313191878878033,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Alwar": {
+                "mapbox_center": {
+                    "lon": 76.66236164337238,
+                    "lat": 27.638099082934904,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Banswara": {
+                "mapbox_center": {
+                    "lon": 74.36432792684143,
+                    "lat": 23.491922288194377,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Baran": {
+                "mapbox_center": {
+                    "lon": 76.81200987416544,
+                    "lat": 24.920773915509496,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Barmer": {
+                "mapbox_center": {
+                    "lon": 71.46656446016293,
+                    "lat": 25.58161280100994,
+                    "mapbox_zoom": 6
+                }
+            },
+            "Bharatpur": {
+                "mapbox_center": {
+                    "lon": 77.3213492027588,
+                    "lat": 27.264910166351314,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Bhilwara": {
+                "mapbox_center": {
+                    "lon": 74.73678097531067,
+                    "lat": 25.48878662457105,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Bikaner": {
+                "mapbox_center": {
+                    "lon": 73.12078205124023,
+                    "lat": 28.116334234391672,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Bundi": {
+                "mapbox_center": {
+                    "lon": 75.80808565071084,
+                    "lat": 25.437830168204915,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Chittaurgarh": {
+                "mapbox_center": {
+                    "lon": 74.96033469687967,
+                    "lat": 24.716738457514932,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Churu": {
+                "mapbox_center": {
+                    "lon": 74.7645295912807,
+                    "lat": 28.20541904449462,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Dausa": {
+                "mapbox_center": {
+                    "lon": 76.61007735507278,
+                    "lat": 26.805539228487778,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Dhaulpur": {
+                "mapbox_center": {
+                    "lon": 77.74974582324425,
+                    "lat": 26.653218799935544,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Dungarpur": {
+                "mapbox_center": {
+                    "lon": 73.86634586588369,
+                    "lat": 23.672493715104814,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Ganganagar": {
+                "mapbox_center": {
+                    "lon": 73.47968925891148,
+                    "lat": 29.461522856322357,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Hanumangarh": {
+                "mapbox_center": {
+                    "lon": 74.67960628914705,
+                    "lat": 29.36586592905386,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Jaipur": {
+                "mapbox_center": {
+                    "lon": 75.60090895518653,
+                    "lat": 27.150459901908043,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Jaisalmer": {
+                "mapbox_center": {
+                    "lon": 70.91114240595303,
+                    "lat": 27.02731821586552,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Jalor": {
+                "mapbox_center": {
+                    "lon": 72.13952867304386,
+                    "lat": 25.209561242064872,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Jhalawar": {
+                "mapbox_center": {
+                    "lon": 76.20336888670512,
+                    "lat": 24.31328382267915,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Jhunjhunun": {
+                "mapbox_center": {
+                    "lon": 75.56009379184341,
+                    "lat": 28.079628983332313,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Jodhpur": {
+                "mapbox_center": {
+                    "lon": 72.83852357452523,
+                    "lat": 26.736482487850836,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Karauli": {
+                "mapbox_center": {
+                    "lon": 76.93438581617634,
+                    "lat": 26.515883114474565,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Kota": {
+                "mapbox_center": {
+                    "lon": 76.09617828993748,
+                    "lat": 25.194653468254053,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Nagaur": {
+                "mapbox_center": {
+                    "lon": 74.22539665802415,
+                    "lat": 27.05884691154336,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Pali": {
+                "mapbox_center": {
+                    "lon": 73.58799698664257,
+                    "lat": 25.60483065695385,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Pratapgarh": {
+                "mapbox_center": {
+                    "lon": 74.57639284675594,
+                    "lat": 24.022921351585268,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Rajsamand": {
+                "mapbox_center": {
+                    "lon": 73.93216718969487,
+                    "lat": 25.3698822748742,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Sawai Madhopur": {
+                "mapbox_center": {
+                    "lon": 76.48054696109371,
+                    "lat": 26.22935759325819,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Sikar": {
+                "mapbox_center": {
+                    "lon": 75.3863172756004,
+                    "lat": 27.66246390592455,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Sirohi": {
+                "mapbox_center": {
+                    "lon": 72.70907818362994,
+                    "lat": 24.81120756809635,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Tonk": {
+                "mapbox_center": {
+                    "lon": 75.7144986541682,
+                    "lat": 26.1223731593384,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "Udaipur": {
+                "mapbox_center": {
+                    "lon": 73.7164054405273,
+                    "lat": 24.453649538330584,
+                    "mapbox_zoom": 6.5
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 73.87824022005802,
+            "lat": 26.629673915003995
+        },
+        "mapbox_zoom": 5
+    },
+    "SIKKIM": {
+        "districts": {
+            "East District": {
+                "mapbox_center": {
+                    "lon": 88.67912458683733,
+                    "lat": 27.278817337881982,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "North  District": {
+                "mapbox_center": {
+                    "lon": 88.50132325115969,
+                    "lat": 27.75237297547565,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "South District": {
+                "mapbox_center": {
+                    "lon": 88.39836157330505,
+                    "lat": 27.303789940077344,
+                    "mapbox_zoom": 6.5
+                }
+            },
+            "West District": {
+                "mapbox_center": {
+                    "lon": 88.18569324378527,
+                    "lat": 27.363975357857235,
+                    "mapbox_zoom": 6.5
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 88.46680899294111,
+            "lat": 27.604182125326616
+        },
+        "mapbox_zoom": 6.5
+    },
+    "TAMIL NADU": {
+        "districts": {
+            "Ariyalur": {},
+            "Chengalpattu": {},
+            "Chennai": {},
+            "Coimbatore": {},
+            "Cuddalore": {},
+            "Dharmapuri": {},
+            "Dindigul": {},
+            "Erode": {},
+            "Kallakurichi": {},
+            "Kanchipuram": {},
+            "Kanniyakumari": {},
+            "Karur": {},
+            "Krishnagiri": {},
+            "Madurai": {},
+            "Mayiladuthurai": {},
+            "Nagapattinam": {},
+            "Namakkal": {},
+            "Perambalur": {},
+            "Pudukkottai": {},
+            "Ramanathapuram": {},
+            "Ranipet": {},
+            "Salem": {},
+            "Sivaganga": {},
+            "Tenkasi": {},
+            "Thanjavur": {},
+            "The Nilgiris": {},
+            "Theni": {},
+            "Thiruvallur": {},
+            "Thiruvarur": {},
+            "Tiruchirappalli": {},
+            "Tirunelveli": {},
+            "Tirupathur": {},
+            "Tiruppur": {},
+            "Tiruvannamalai": {},
+            "Tuticorin": {},
+            "Vellore": {},
+            "Villupuram": {},
+            "Virudhunagar": {}
+        },
+        "mapbox_center": {
+            "lon": 78.28976492701142,
+            "lat": 10.82116630670658
+        },
+        "mapbox_zoom": 5.5
+    },
+    "TELANGANA": {
+        "districts": {
+            "Adilabad": {
+                "mapbox_center": {
+                    "lon": 78.8617482355611,
+                    "lat": 19.29364145651477,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bhadradri Kothagudem": {
+                "mapbox_center": {
+                    "lon": 80.76227229511584,
+                    "lat": 17.716338496222555,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hyderabad": {
+                "mapbox_center": {
+                    "lon": 78.45828307703455,
+                    "lat": 17.390285844700486,
+                    "mapbox_zoom": 9
+                }
+            },
+            "Jagitial": {
+                "mapbox_center": {
+                    "lon": 78.90788948552009,
+                    "lat": 18.813857814532604,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Jangoan": {
+                "mapbox_center": {
+                    "lon": 79.21455583708823,
+                    "lat": 17.726246064257033,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Jayashankar": {},
+            "Jogulamba Gadwal": {
+                "mapbox_center": {
+                    "lon": 77.86992004075702,
+                    "lat": 16.099998114011903,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Kamareddy": {},
+            "Karimnagar": {
+                "mapbox_center": {
+                    "lon": 79.63283500651482,
+                    "lat": 18.431554238415863,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Khammam": {
+                "mapbox_center": {
+                    "lon": 80.3639961744288,
+                    "lat": 17.26011417340938,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Kumuram Bheem Asifabad": {
+                "mapbox_center": {
+                    "lon": 79.39436188459497,
+                    "lat": 19.323094870847356,
+                    "mapbox_zoom": 7.5
+                }
+            },
+            "Mahabubabad": {},
+            "Mahabubnagar": {
+                "mapbox_center": {
+                    "lon": 77.8424380726111,
+                    "lat": 16.92383012939304,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Mancherial": {},
+            "Medak": {
+                "mapbox_center": {
+                    "lon": 78.28502034772671,
+                    "lat": 17.856748830744184,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Medchal Malkajgiri": {},
+            "Mulugu": {
+                "mapbox_center": {
+                    "lon": 80.30434061588576,
+                    "lat": 18.291288892411906,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Nagarkurnool": {},
+            "Nalgonda": {
+                "mapbox_center": {
+                    "lon": 79.36758914579819,
+                    "lat": 16.942573478618144,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Narayanpet": {
+                "mapbox_center": {
+                    "lon": 77.51736621599257,
+                    "lat": 16.69049712310866,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Nirmal": {},
+            "Nizamabad": {
+                "mapbox_center": {
+                    "lon": 78.09507363085513,
+                    "lat": 18.538106787271637,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Peddapalli": {
+                "mapbox_center": {
+                    "lon": 79.4714947827857,
+                    "lat": 18.62116253387247,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Rajanna Sircilla": {
+                "mapbox_center": {
+                    "lon": 78.77299235750601,
+                    "lat": 18.42825768606917,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ranga Reddy": {
+                "mapbox_center": {
+                    "lon": 78.3835045486683,
+                    "lat": 17.134293221069402,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sangareddy": {},
+            "Siddipet": {},
+            "Suryapet": {},
+            "Vikarabad": {},
+            "Wanaparthy": {},
+            "Warangal Rural": {},
+            "Warangal Urban": {
+                "mapbox_center": {
+                    "lon": 79.42069048553552,
+                    "lat": 18.12574592871996,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Yadadri Bhuvanagiri": {
+                "mapbox_center": {
+                    "lon": 79.06512712400787,
+                    "lat": 17.428093008885043,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 79.27927319564478,
+            "lat": 17.876415400847236
+        },
+        "mapbox_zoom": 5.5
+    },
+    "TRIPURA": {
+        "districts": {
+            "Dhalai": {
+                "mapbox_center": {
+                    "lon": 91.95949253316707,
+                    "lat": 23.826783881755823,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gomati": {
+                "mapbox_center": {
+                    "lon": 91.60916858205933,
+                    "lat": 23.51593023213534,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Khowai": {
+                "mapbox_center": {
+                    "lon": 91.627066638238,
+                    "lat": 23.95755974268991,
+                    "mapbox_zoom": 7
+                }
+            },
+            "North Tripura": {
+                "mapbox_center": {
+                    "lon": 92.19727575478774,
+                    "lat": 24.08969205433364,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sipahijala": {
+                "mapbox_center": {
+                    "lon": 91.36304922546901,
+                    "lat": 23.53292368794125,
+                    "mapbox_zoom": 7
+                }
+            },
+            "South Tripura": {
+                "mapbox_center": {
+                    "lon": 91.57249306530207,
+                    "lat": 23.173610992610463,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Unokoti": {
+                "mapbox_center": {
+                    "lon": 92.05757416040228,
+                    "lat": 24.19232509847029,
+                    "mapbox_zoom": 7
+                }
+            },
+            "West Tripura": {
+                "mapbox_center": {
+                    "lon": 91.39271881186818,
+                    "lat": 23.915727652011444,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 91.74082183159868,
+            "lat": 23.733414020606503
+        },
+        "mapbox_zoom": 7
+    },
+    "UTTAR PRADESH": {
+        "districts": {
+            "Agra": {
+                "mapbox_center": {
+                    "lon": 78.12590612366967,
+                    "lat": 27.07555240613081,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Aligarh": {
+                "mapbox_center": {
+                    "lon": 77.94203805524657,
+                    "lat": 27.87548800996497,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ambedkar Nagar": {
+                "mapbox_center": {
+                    "lon": 82.67612530442975,
+                    "lat": 26.404610685313507,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Amethi": {
+                "mapbox_center": {
+                    "lon": 81.68840802135139,
+                    "lat": 26.296952467044136,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Amroha": {},
+            "Auraiya": {
+                "mapbox_center": {
+                    "lon": 79.48096496309722,
+                    "lat": 26.655826490048888,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Azamgarh": {
+                "mapbox_center": {
+                    "lon": 83.06661201515973,
+                    "lat": 26.0238333225538,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Baghpat": {
+                "mapbox_center": {
+                    "lon": 77.31794375015299,
+                    "lat": 29.037428907237118,
+                    "mapbox_zoom": 8
+                }
+            },
+            "Bahraich": {
+                "mapbox_center": {
+                    "lon": 81.51452222460492,
+                    "lat": 27.73646848557961,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ballia": {
+                "mapbox_center": {
+                    "lon": 84.1553643188787,
+                    "lat": 25.87458235607285,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Balrampur": {
+                "mapbox_center": {
+                    "lon": 82.3932187147968,
+                    "lat": 27.447642936484925,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Banda": {
+                "mapbox_center": {
+                    "lon": 80.57019364565714,
+                    "lat": 25.4438493122628,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bara Banki": {
+                "mapbox_center": {
+                    "lon": 81.34258206377947,
+                    "lat": 26.942314550891766,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bareilly": {
+                "mapbox_center": {
+                    "lon": 79.3804645222465,
+                    "lat": 28.458325753120043,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Basti": {
+                "mapbox_center": {
+                    "lon": 82.6031838640572,
+                    "lat": 26.838681173288286,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bhadohi": {},
+            "Bijnor": {
+                "mapbox_center": {
+                    "lon": 78.46453042505101,
+                    "lat": 29.407057744096136,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Budaun": {
+                "mapbox_center": {
+                    "lon": 78.88969431066286,
+                    "lat": 28.066730356485856,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bulandshahr": {
+                "mapbox_center": {
+                    "lon": 78.0495272812099,
+                    "lat": 28.38731250710328,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chandauli": {
+                "mapbox_center": {
+                    "lon": 83.28171799955979,
+                    "lat": 25.1258926560383,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chitrakoot": {
+                "mapbox_center": {
+                    "lon": 81.12315207648857,
+                    "lat": 25.217211648288618,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Deoria": {
+                "mapbox_center": {
+                    "lon": 83.83147370868036,
+                    "lat": 26.424352427280834,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Etah": {
+                "mapbox_center": {
+                    "lon": 78.72553989556646,
+                    "lat": 27.554948703043948,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Etawah": {
+                "mapbox_center": {
+                    "lon": 79.04549257946925,
+                    "lat": 26.71573319473763,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Faizabad": {
+                "mapbox_center": {
+                    "lon": 82.01015362488195,
+                    "lat": 26.638677139963484,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Farrukhabad": {
+                "mapbox_center": {
+                    "lon": 79.42870045525103,
+                    "lat": 27.436076808672404,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Fatehpur": {
+                "mapbox_center": {
+                    "lon": 80.77571354596361,
+                    "lat": 25.834810963750684,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Firozabad": {
+                "mapbox_center": {
+                    "lon": 78.50770030272251,
+                    "lat": 27.194380129861322,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gautam Buddha Nagar": {
+                "mapbox_center": {
+                    "lon": 77.51749611148433,
+                    "lat": 28.369807649714495,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ghaziabad": {
+                "mapbox_center": {
+                    "lon": 77.45445449181835,
+                    "lat": 28.767769359601267,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Ghazipur": {
+                "mapbox_center": {
+                    "lon": 83.51271913931306,
+                    "lat": 25.603095722843374,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gonda": {
+                "mapbox_center": {
+                    "lon": 82.06444061413188,
+                    "lat": 27.110402888223163,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Gorakhpur": {
+                "mapbox_center": {
+                    "lon": 83.36944004293612,
+                    "lat": 26.66751140372596,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hamirpur": {
+                "mapbox_center": {
+                    "lon": 79.85340707951863,
+                    "lat": 25.81965388849455,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hapur": {
+                "mapbox_center": {
+                    "lon": 77.87826495765682,
+                    "lat": 28.716734484706464,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hardoi": {
+                "mapbox_center": {
+                    "lon": 80.25564966373197,
+                    "lat": 27.337117052896826,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hathras": {
+                "mapbox_center": {
+                    "lon": 78.20055674316839,
+                    "lat": 27.572454218840242,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jalaun": {
+                "mapbox_center": {
+                    "lon": 79.44245355535136,
+                    "lat": 26.10451586974083,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jaunpur": {
+                "mapbox_center": {
+                    "lon": 82.6063496780354,
+                    "lat": 25.796963648092753,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jhansi": {
+                "mapbox_center": {
+                    "lon": 78.8602684964891,
+                    "lat": 25.53011267562949,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kannauj": {
+                "mapbox_center": {
+                    "lon": 79.66901052233243,
+                    "lat": 26.998828661514633,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kanpur Dehat": {
+                "mapbox_center": {
+                    "lon": 79.84778488393059,
+                    "lat": 26.458875697348233,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kanpur Nagar": {
+                "mapbox_center": {
+                    "lon": 80.24112271307423,
+                    "lat": 26.44154983371422,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kasganj": {},
+            "Kaushambi": {
+                "mapbox_center": {
+                    "lon": 81.43003740318703,
+                    "lat": 25.534535619532722,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kheri": {
+                "mapbox_center": {
+                    "lon": 80.66520079961226,
+                    "lat": 28.18356437000505,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kushinagar": {
+                "mapbox_center": {
+                    "lon": 83.9721881513029,
+                    "lat": 26.924199756432074,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Lalitpur": {
+                "mapbox_center": {
+                    "lon": 78.58125919202075,
+                    "lat": 24.700779982680896,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Lucknow": {
+                "mapbox_center": {
+                    "lon": 80.88901787712898,
+                    "lat": 26.83122518010493,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mahoba": {
+                "mapbox_center": {
+                    "lon": 79.75013496411388,
+                    "lat": 25.337671498953277,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mahrajganj": {
+                "mapbox_center": {
+                    "lon": 83.52723238302701,
+                    "lat": 27.183993211895356,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mainpuri": {
+                "mapbox_center": {
+                    "lon": 79.06262305398371,
+                    "lat": 27.209277761453674,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mathura": {
+                "mapbox_center": {
+                    "lon": 77.63622698337221,
+                    "lat": 27.6004053510271,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mau": {
+                "mapbox_center": {
+                    "lon": 83.57837742833246,
+                    "lat": 26.03903336147912,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Meerut": {
+                "mapbox_center": {
+                    "lon": 77.77322426337523,
+                    "lat": 29.001621715662488,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Mirzapur": {
+                "mapbox_center": {
+                    "lon": 82.63091936237828,
+                    "lat": 24.931696928139203,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Moradabad": {
+                "mapbox_center": {
+                    "lon": 78.70047747540877,
+                    "lat": 28.79556683151178,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Muzaffarnagar": {
+                "mapbox_center": {
+                    "lon": 77.69596801661454,
+                    "lat": 29.44976065290458,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Pilibhit": {
+                "mapbox_center": {
+                    "lon": 80.03578144455864,
+                    "lat": 28.49438524563523,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Pratapgarh": {
+                "mapbox_center": {
+                    "lon": 81.87971007904355,
+                    "lat": 25.876553918762493,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Prayagraj": {
+                "mapbox_center": {
+                    "lon": 81.93490302644403,
+                    "lat": 25.27927258464255,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Rae Bareli": {
+                "mapbox_center": {
+                    "lon": 81.05976824945415,
+                    "lat": 26.208687678311716,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Rampur": {
+                "mapbox_center": {
+                    "lon": 79.14322466728666,
+                    "lat": 28.79339235916138,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Saharanpur": {
+                "mapbox_center": {
+                    "lon": 77.54072901375122,
+                    "lat": 29.98551465156705,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sambhal": {},
+            "Sant Kabir Nagar": {
+                "mapbox_center": {
+                    "lon": 83.0230228429903,
+                    "lat": 26.75498348393132,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Shahjahanpur": {
+                "mapbox_center": {
+                    "lon": 79.84078618950207,
+                    "lat": 27.91307329761834,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Shamli": {
+                "mapbox_center": {
+                    "lon": 77.29313372559827,
+                    "lat": 29.481112810468154,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Shrawasti": {
+                "mapbox_center": {
+                    "lon": 81.90755175194303,
+                    "lat": 27.678655516294498,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Siddharthnagar": {
+                "mapbox_center": {
+                    "lon": 82.86570123043887,
+                    "lat": 27.25138935818071,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sitapur": {
+                "mapbox_center": {
+                    "lon": 80.85757258102623,
+                    "lat": 27.50288826429928,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sonbhadra": {
+                "mapbox_center": {
+                    "lon": 83.03573227230872,
+                    "lat": 24.415219760001264,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Sultanpur": {
+                "mapbox_center": {
+                    "lon": 82.25062962337277,
+                    "lat": 26.24420438943436,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Unnao": {
+                "mapbox_center": {
+                    "lon": 80.54697403261743,
+                    "lat": 26.567473114492053,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Varanasi": {
+                "mapbox_center": {
+                    "lon": 82.92741642201085,
+                    "lat": 25.372318473214897,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 80.85933548883872,
+            "lat": 27.138230096399496
+        },
+        "mapbox_zoom": 5
+    },
+    "UTTARAKHAND": {
+        "districts": {
+            "Almora\n": {
+                "mapbox_center": {
+                    "lon": 79.55750939560656,
+                    "lat": 29.702667326438593,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Bageshwar": {
+                "mapbox_center": {
+                    "lon": 79.81462094899257,
+                    "lat": 30.008872780423143,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Chamoli": {
+                "mapbox_center": {
+                    "lon": 79.5890187474281,
+                    "lat": 30.500966183550204,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Champawat": {
+                "mapbox_center": {
+                    "lon": 80.0559669164287,
+                    "lat": 29.231104870101518,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Dehradun": {
+                "mapbox_center": {
+                    "lon": 77.94135365128949,
+                    "lat": 30.497691777607123,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Garhwal": {
+                "mapbox_center": {
+                    "lon": 78.71697769820811,
+                    "lat": 29.84732015516723,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hardwar": {
+                "mapbox_center": {
+                    "lon": 78.02488584438287,
+                    "lat": 29.91127323681173,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Nainital": {
+                "mapbox_center": {
+                    "lon": 79.41385247815175,
+                    "lat": 29.29525940383467,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Pithoragarh": {
+                "mapbox_center": {
+                    "lon": 80.43312061252284,
+                    "lat": 30.126152653166635,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Rudraprayag": {
+                "mapbox_center": {
+                    "lon": 79.08643696546596,
+                    "lat": 30.49116104316692,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Tehri Garhwal": {
+                "mapbox_center": {
+                    "lon": 78.4857181333597,
+                    "lat": 30.465613980795123,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Udham Singh Nagar": {
+                "mapbox_center": {
+                    "lon": 79.39776929687558,
+                    "lat": 29.04565912057393,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Uttarkashi": {
+                "mapbox_center": {
+                    "lon": 78.61287903796973,
+                    "lat": 30.962210608579376,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 79.30879380903048,
+            "lat": 30.089510836782647
+        },
+        "mapbox_zoom": 6
+    },
+    "WEST BENGAL": {
+        "districts": {
+            "Alipurduar": {},
+            "Bankura": {
+                "mapbox_center": {
+                    "lon": 87.18632119081211,
+                    "lat": 23.133179655767215,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Birbhum": {
+                "mapbox_center": {
+                    "lon": 87.5561766717041,
+                    "lat": 24.06348348428477,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Cooch Behar": {},
+            "Dakshin Dinajpur": {
+                "mapbox_center": {
+                    "lon": 88.58607357190559,
+                    "lat": 25.386756417596153,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Darjiling": {
+                "mapbox_center": {
+                    "lon": 88.25191914948662,
+                    "lat": 26.839296918056842,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Hooghly": {},
+            "Howrah": {},
+            "Jalpaiguri": {
+                "mapbox_center": {
+                    "lon": 88.7553333858495,
+                    "lat": 26.626520999816883,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Jhargram": {
+                "mapbox_center": {
+                    "lon": 86.90837876375359,
+                    "lat": 22.331654253692452,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kalimpong": {
+                "mapbox_center": {
+                    "lon": 88.63364439182459,
+                    "lat": 27.02614657788869,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Kolkata": {},
+            "Maldah": {
+                "mapbox_center": {
+                    "lon": 88.0880316494631,
+                    "lat": 25.113587803187407,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Medinipur West": {
+                "mapbox_center": {
+                    "lon": 87.47357011301011,
+                    "lat": 22.359324225076183,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Murshidabad": {
+                "mapbox_center": {
+                    "lon": 88.28221905856782,
+                    "lat": 24.29158975010306,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Nadia": {
+                "mapbox_center": {
+                    "lon": 88.46792499023067,
+                    "lat": 23.49029635574484,
+                    "mapbox_zoom": 7
+                }
+            },
+            "North Twenty Four Pargan*": {},
+            "Paschim Bardhaman": {
+                "mapbox_center": {
+                    "lon": 87.1668464309605,
+                    "lat": 23.643082648971756,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Purba Bardhaman": {
+                "mapbox_center": {
+                    "lon": 87.92460006376007,
+                    "lat": 23.38971937586934,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Purba Medinipur": {
+                "mapbox_center": {
+                    "lon": 87.80655924263914,
+                    "lat": 22.06459210693719,
+                    "mapbox_zoom": 7
+                }
+            },
+            "Puruliya": {
+                "mapbox_center": {
+                    "lon": 86.36297714524683,
+                    "lat": 23.201888396935995,
+                    "mapbox_zoom": 7
+                }
+            },
+            "South Twenty Four Pargan*": {},
+            "Uttar Dinajpur": {
+                "mapbox_center": {
+                    "lon": 88.16661419361294,
+                    "lat": 25.871351844671768,
+                    "mapbox_zoom": 7
+                }
+            }
+        },
+        "mapbox_center": {
+            "lon": 87.8469307509705,
+            "lat": 24.35238645951029
+        },
+        "mapbox_zoom": 5
+    }
+}

@@ -4,7 +4,7 @@ import streamlit as st
 # --- Configuration ---
 # Replace this with the public URL you get after deploying your Dash app to Cloud Run
 # Example: "https://my-dash-app-xyz-uc.a.run.app"
-DASH_APP_URL = "https://78520081da55.ngrok-free.app/"
+DASH_APP_URL = "http://127.0.0.1:8050/"
 
 
 # --- Main Streamlit App ---

@@ -1,0 +1,36 @@
+{
+    "ANDAMAN & NICOBAR": {
+        "districts": {
+            "Nicobars": {},
+            "North  & Middle Andaman": {},
+            "South Andaman": {}
+        },
+        "mapbox_center": {
+            "lon": 93.0733647662899,
+            "lat": 10.213683897850284
+        },
+        "mapbox_zoom": 6.5
+    },
+    "ANDHRA PRADESH": {
+        "districts": {
+            "Anantapur": {},
+            "Chittoor": {},
+            "East Godavari": {},
+            "Guntur": {},
+            "Krishna": {},
+            "Kurnool": {},
+            "Prakasam": {},
+            "Sri Potti Sriramulu Nell*": {},
+            "Srikakulam": {},
+            "Visakhapatnam": {},
+            "Vizianagaram": {},
+            "West Godavari": {},
+            "Y.S.R.": {}
+        },
+        "mapbox_center": {
+            "lon": 80.76266863810739,
+            "lat": 15.895937511014829
+        },
+        "mapbox_zoom": 6.5
+    }
+}

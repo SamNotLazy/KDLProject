@@ -30,7 +30,6 @@ def plot_charts(change_df, gdf, geo_key, color_scale, map_title, bar_title):
         hover_name=geo_key,
         hover_data={map_col: True, bar_col: True},
         projection="mercator", # Switched to a standard projection
-        opacity=0.7,
         color_continuous_scale=color_scale,
         labels={map_col: map_col}
     )
